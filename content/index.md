@@ -9,3 +9,6 @@ This page contains:
 This page is publically available for anyone to edit [here](https://github.com/sleepywndud/sleepywndud.github.io).
 
 > *This page may contain mistakes. If you spot one, feel free to shoot me an email to: 22222w@duck.com.*
+
+P.S.\
+At school, I do Academic Mentoring for Mathematics, so feel free to sign up and I will be more than willing to teach you in person with actual exemplars and clearer explanations.
