@@ -1,8 +1,9 @@
-#L2MAEL [[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/AS91257 - Functions & Domains]]
+#L2MAEL
 
 ---
 
 I'm going to plot the graphs for $y=\cos(x)$:
+
 Plotting using table is efficient when graph is unknown.
 
 | $x$ | $y=\cos x$ |
@@ -28,6 +29,9 @@ Plotting using table is efficient when graph is unknown.
 By comparing it to the sine graph $(\sin(x))$, we can see that the two graphs are almost identical -- just a few digits to the side. 
 
 ## <u>Generic Equation:</u>
+
 $$y=A\cos (B(x-p))+q$$
+
 The generic equation for the cosine function is identical to the sine function ([[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/Basics/Graphs/Trigonometric Function/Sine Function]]).
+
 The descriptions and info for the $A$, and $B$, are defined in the [[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/Basics/Graphs/Trigonometric Function/Sine Function]]. 

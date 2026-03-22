@@ -1,8 +1,9 @@
-#L2MAEL [[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/AS91257 - Functions & Domains]]
+#L2MAEL
 
 ---
 
-Tangent functions are very different to [[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/Basics/Graphs/Trigonometric Function/Sine Function|Sine Function]]s and [[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/Basics/Graphs/Trigonometric Function/Cosine Function|Cosine Function]]s.
+Tangent functions are very different sine and cosing functions.
+
 When a table is made:
 
 | $x$ | $y=\tan x$  |
@@ -31,9 +32,11 @@ There are *undefined* in the tables. This means that there are no values in that
 <img src="/images/a65fcc8820e81c664a7c4b2876b4c5d6.png" style='width: 500px;' />
 
 As you can see from the image above, there are asymptotes on the left side of every tangent curve:
+
 <img src="/images/e0dac681a70074eed92765dcbb481e66.png" style='width: 500px;' />
 
 The right side of the curve does not have an asymptote -- it is like any other quadratic/cubic (etc..) functions where the $y$ value continuously increases depending on the $x$-values
 
 ## <u>Generic Equation:</u>
+
 $$y=A\tan\left(B\left(x-p\right)\right)+q$$
