@@ -18,24 +18,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Install Dependencies
-        run: npm ci
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Build Quartz
-        run: npx quartz build --directory content
+        uses: konstfish/quartz-build-action@v7
+        with:
+          source: content
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: ._site
 
   deploy:
     needs: build
