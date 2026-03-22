@@ -33,7 +33,7 @@ You should talk about minimum three of these in the exam (go with four/five as s
 
 EDIT: You also have to talk about *why* you have used them.
 	For example, if you were to trace this path: 
-	![|500](Pasted%20image%2020250824233417.png)
+	<img src="/images/Pasted image 20250824233417.png" width="500" />
 	You could say that:
 	"Since this path has a wave-looking shape, I could use a sine graph since sine graphs also have a wave-looking graph."
 

@@ -11,9 +11,9 @@ Imagine this:
 "A U-shaped quadratic graph's vertex is on the center of the + shaped line representing the $x$ and $y$ axis. Now, imagine that the graph kept its position, but the + shaped line representing the $x$ and $y$ axis moved to the left. Is the graph now placed on the left, or right side of the $y$-axis?"
 
 Visual example:
-<img src="../img/266efb685286975cb58742401efbabaf.png" style='width: 300px;' />
+<img src="/images/266efb685286975cb58742401efbabaf.png" style='width: 300px;' />
 
-<img src="../img/229e3caf2cba47b556f0741536222043.png" style='width: 300px;' />
+<img src="/images/229e3caf2cba47b556f0741536222043.png" style='width: 300px;' />
 *(normally that explains all the concept of this origin movement)*
 The answer is 'right side'.
 

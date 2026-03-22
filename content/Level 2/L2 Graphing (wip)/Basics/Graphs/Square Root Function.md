@@ -4,12 +4,12 @@
 
 A generic square root function graph looks like this:
 $$\text{equation:} \space\space y=\sqrt{ x }$$
-<img src="../../img/e853d07f90dbeabdb9bf761b008e4ae7.png" style='width: 300px;' />
+<img src="/images/e853d07f90dbeabdb9bf761b008e4ae7.png" style='width: 300px;' />
 ..just like a sideways half parabola. 
 
 The reason why it's a 'half' sideways parabola is because it is a positive square root. If it has a negative square root:
 $$\text{equation:} \space\space y=-\sqrt{ x }$$
-<img src="../../img/dc68aff3003aa059e55ba52a3ec1e9a0.png" style='width: 300px;' />
+<img src="/images/dc68aff3003aa059e55ba52a3ec1e9a0.png" style='width: 300px;' />
 ..it's the direct opposite. 
 This is because this function originates from the equation:
 $$y^2=x$$

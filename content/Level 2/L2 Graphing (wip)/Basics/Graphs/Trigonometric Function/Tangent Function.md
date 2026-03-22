@@ -28,10 +28,10 @@ When a table is made:
 There are *undefined* in the tables. This means that there are no values in that spot; meaning asymptotes exist for this graph. Refer to [[Exponential Function]] if unsure.
 
 
-<img src="../../../img/a65fcc8820e81c664a7c4b2876b4c5d6.png" style='width: 500px;' />
+<img src="/images/a65fcc8820e81c664a7c4b2876b4c5d6.png" style='width: 500px;' />
 
 As you can see from the image above, there are asymptotes on the left side of every tangent curve:
-<img src="../../../img/e0dac681a70074eed92765dcbb481e66.png" style='width: 500px;' />
+<img src="/images/e0dac681a70074eed92765dcbb481e66.png" style='width: 500px;' />
 
 The right side of the curve does not have an asymptote -- it is like any other quadratic/cubic (etc..) functions where the $y$ value continuously increases depending on the $x$-values
 

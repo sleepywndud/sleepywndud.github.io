@@ -6,7 +6,7 @@ We use 'degrees', when measuring angles, or when we're doing trigonometry to fin
 However, there is another way to measure angles, which is called the radians; the setting which gives you the negative angles when you're doing trigonometry.
 
 1 radian can be found when the arc of a circle has equal length to the radius of the same circle:
-<img src="../../../img/538b9056275e3bea7d39bd5b8eb25a57.png" style='width: 300px;' />
+<img src="/images/538b9056275e3bea7d39bd5b8eb25a57.png" style='width: 300px;' />
 Source: https://darkpgmr.tistory.com/26
 
 1 radian is approximately $57.3^o$, and we can see from here 1 radian is significantly greater than 1 degrees.

@@ -3,7 +3,7 @@
 ---
 
 An exponential equation is basically the inverted function of a [[wndx2/2. Area/afterschool/csh/11 - Graphical Methods/Graphs/4. Logarithmic Function]] function; exponentials are related to logarithmics. All exponential equation has an unknown exponent -- for example: $y=2^x$ (graph below)
-<img src="../../img/441d5113da0ce8183c0d3d9459b8ade9.png" style='width: 300px;' />
+<img src="/images/441d5113da0ce8183c0d3d9459b8ade9.png" style='width: 300px;' />
 the generic equation is:
 $$y=\alpha \beta^{x-p}+q$$
 ..where you can translate the graph by modifying the $p$ and $q$ coordinates.
