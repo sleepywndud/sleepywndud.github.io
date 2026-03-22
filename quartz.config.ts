@@ -10,15 +10,6 @@ const config = {
       body: "Source Sans Pro", 
       code: "IBM Plex Mono" 
     } 
-  },
-  plugins: {
-    transformers: [
-      { name: "FrontMatter" }
-    ],
-    emitters: [
-      { name: "HTML" },
-      { name: "Static" }
-    ]
   }
 } 
 export default config

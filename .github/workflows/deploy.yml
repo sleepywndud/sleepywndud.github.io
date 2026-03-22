@@ -20,11 +20,12 @@ jobs:
         uses: konstfish/quartz-build-action@v7
         with:
           source: content
-          quartz_config: quartz.config.ts  # Add this to ensure your config is used
+          page_title: "sleepy"
+          page_base_url: "sleepywndud.github.io"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ._site  # ← fixed: forward slash
+          path: ._site
   deploy:
     needs: build
     runs-on: ubuntu-latest
