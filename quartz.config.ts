@@ -12,8 +12,12 @@ const config = {
     } 
   },
   plugins: {
+    transformers: [
+      { name: "FrontMatter" }
+    ],
     emitters: [
-      { name: "HTML" }
+      { name: "HTML" },
+      { name: "Static" }
     ]
   }
 } 
