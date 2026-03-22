@@ -12,12 +12,6 @@ const config = {
       code: "IBM Plex Mono",
     },
   },
-
-  analytics: {
-    provider: "umami",
-    host: "https://cloud.umami.is",
-    websiteId: "0a44a84e-faa9-4f02-a1c7-23bfc588c4d8",
-  },
 }
 
 export default config
