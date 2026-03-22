@@ -26,7 +26,7 @@ jobs:
         uses: konstfish/quartz-build-action@v7
         with:
           source: content
-          page_title: "sleepy"
+          page_title: "James' NCEA Math Notes"
           page_base_url: "sleepywndud.github.io"
 
       - name: Upload artifact
