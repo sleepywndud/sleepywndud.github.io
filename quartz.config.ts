@@ -1,5 +1,5 @@
 const config = { 
-  pageTitle: "sleepy", 
+  pageTitle: "jamesnotes", 
   baseUrl: "sleepywndud.github.io", 
   description: "NCEA Level 2 and 3 Notes for Mathematics, Statistics, and Calculus.", 
   enableDrafts: false, 
