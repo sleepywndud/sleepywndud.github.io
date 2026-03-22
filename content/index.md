@@ -12,3 +12,10 @@ This page is publically available for anyone to edit [here](https://github.com/s
 
 P.S.\
 At school, I do Academic Mentoring for Mathematics, so feel free to sign up and I will be more than willing to teach you in person with actual exemplars and clearer explanations.
+
+---
+
+Copyright (c) 2026 Juyoung Park.\
+All rights reserved.
+
+> **ALL NOTES PROVIDED IN THIS FILE ARE LICENSED UNDER THE [Creative Commons Attribution Non-Commercial No-Derivatives](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt) (CC-BY-NC-ND) LICENSE.**
