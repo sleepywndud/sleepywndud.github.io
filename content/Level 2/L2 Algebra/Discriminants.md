@@ -10,10 +10,10 @@ This Note is Licensed under the CC-BY-NC-ND 4.0 License.
 
 "Discriminants" can be used to figure out how many times a quadratic equation (in the form of $ax^{2}+bx+c=0$) intersects the $x$-axis.\
 The discriminant is derived from the quadratic formula (which is derived from the generic quadratic $ax^{2}+bx+c=0$):
+
 $$x=\frac{-b\pm \sqrt{ b^{2}-4ac }}{2a}$$
 
 In the formula, the discriminant is the $b^{2}-4ac$ part.\
-
 Depending on the value of the discriminant ($b^{2}-4ac$), the number of intersections along the $x$-axis changes
 
 ---
@@ -29,9 +29,7 @@ The intercepts along the $x$-axis represents how many *roots*, or *solutions* (t
 $$x^{2}+3x+4=0$$
 
 the values of $a$, $b$, $c$, are the following: $a=1$, $b=3$, $c=4$.\
-
 $\implies$ Value of discriminant ($b^{2}-4ac$) is = $3^{2}-4(1)(4)$... Which is $-7$.\
-
 If you plot the graph, you can see that the graph has *no intersections* along the $x$-axis.\
 This is because the value of the discriminant in that equation is $-7$. And $-7$ is $<0$.\
 If you actually try to factorise this quadratic equation, it will not work. 
