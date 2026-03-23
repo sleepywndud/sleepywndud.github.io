@@ -19,3 +19,5 @@ Copyright (c) 2026 Juyoung Park.\
 All rights reserved.
 
 > **ALL NOTES PROVIDED IN THIS FILE ARE LICENSED UNDER THE [Creative Commons Attribution Non-Commercial No-Derivatives](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt) (CC-BY-NC-ND) LICENSE.**
+
+Any other inquiries, please email `22222w@duck.com`, or send me a DM on Discord `wndx2`.
