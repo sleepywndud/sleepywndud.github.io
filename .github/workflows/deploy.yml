@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
 
+env:
+  THEME_NAME: default
+
 permissions:
   contents: read
   pages: write
@@ -18,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Fetch Quartz Theme
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action_v1.sh | bash -s -- $THEME_NAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
