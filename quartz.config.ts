@@ -7,6 +7,7 @@ const config = {
 
   theme: {
     typography: {
+      title: "SN Pro",
       header: "SN Pro",
       body: "SN Pro",
       code: "IBM Plex Mono",
