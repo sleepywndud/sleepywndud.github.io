@@ -7,8 +7,8 @@ const config = {
 
   theme: {
     typography: {
-      header: "Schibsted Grotesk",
-      body: "Source Sans Pro",
+      header: "SN Pro",
+      body: "SN Pro",
       code: "IBM Plex Mono",
     },
   },
