@@ -1,3 +1,7 @@
+---
+title: James' Archive
+---
+
 This page is an archive of all the notes I made for myself, my juniors, or my friends for NCEA Level 2 and 3 Calculus, Mathematics and Statistics.
 
 This page mostly contains:
