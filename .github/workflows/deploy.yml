@@ -15,34 +15,29 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0   # Important for Quartz (git history, last modified dates, etc.)
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'npm'     # Speeds up repeated builds
-
-      - name: Install Dependencies
-        run: npm ci
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Build Quartz
-        run: npx quartz build
+        uses: konstfish/quartz-build-action@v7
+        with:
+          source: content
+          page_title: "🔭"
+          page_base_url: "sleepywndud.github.io"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
