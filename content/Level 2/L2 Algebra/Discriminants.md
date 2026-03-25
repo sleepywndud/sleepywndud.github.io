@@ -11,7 +11,9 @@ This Note is Licensed under the CC-BY-NC-ND 4.0 License.
 "Discriminants" can be used to figure out how many times a quadratic equation (in the form of $ax^{2}+bx+c=0$) intersects the $x$-axis.\
 The discriminant is derived from the quadratic formula (which is derived from the generic quadratic $ax^{2}+bx+c=0$):
 
-$$x=\frac{-b\pm \sqrt{ b^{2}-4ac }}{2a}$$
+$$
+x=\frac{-b\pm \sqrt{ b^{2}-4ac }}{2a}
+$$
 
 In the formula, the discriminant is the $b^{2}-4ac$ part.\
 Depending on the value of the discriminant ($b^{2}-4ac$), the number of intersections along the $x$-axis changes
