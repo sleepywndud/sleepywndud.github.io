@@ -1,7 +1,10 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-
+/**
+ * Quartz 4 Configuration
+ * See https://quartz.jzhao.xyz/configuration
+ */
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "🔭",
@@ -10,7 +13,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "",
+    baseUrl: "https://sleepywndud.github.io",
     ignorePatterns: ["private", "Drafts"],
     defaultDateType: "modified",
     theme: {
