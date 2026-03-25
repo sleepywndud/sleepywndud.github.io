@@ -19,6 +19,35 @@ const config: QuartzConfig = {
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
+      typography: {
+        header: "sans-serif",
+        body: "sans-serif",
+        code: "monospace",
+      },
+      colors: {
+        lightMode: {
+          light: "",
+          lightgray: "",
+          gray: "",
+          darkgray: "",
+          dark: "",
+          secondary: "",
+          tertiary: "",
+          highlight: "",
+          textHighlight: "",
+        },
+        darkMode: {
+          light: "",
+          lightgray: "",
+          gray: "",
+          darkgray: "",
+          dark: "",
+          secondary: "",
+          tertiary: "",
+          highlight: "",
+          textHighlight: "",
+        },
+      },
     },
   },
   plugins: {
