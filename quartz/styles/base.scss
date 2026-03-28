@@ -5,6 +5,16 @@
 @use "./callouts.scss";
 @use "./custom.scss";
 
+@font-face {
+  font-family: SN Pro;
+  src: url(/quartz/static/fonts/SNPro-VariableFont_wght.ttf);  
+}
+
+@font-face {
+  font-family: SN Pro;
+  src: url(/quartz/static/fonts/SNPro-Italic-VariableFont_wght.ttf);  
+}
+
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
@@ -20,7 +30,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--light);
-  font-family: var("SN Pro") !important;
+  font-family: "SN Pro" !important;
   color: var(--darkgray);
 }
 
