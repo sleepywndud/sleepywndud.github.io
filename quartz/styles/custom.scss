@@ -2,22 +2,11 @@
 
 // put your custom CSS here!
 @font-face {
-  font-family: "SN Pro";
-  src: url("/static/fonts/SN-Pro-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+  font-family: SN Pro;
+  src: url(/quartz/static/fonts/SNPro-VariableFont_wght.ttf);  
 }
 
 @font-face {
-  font-family: "SN Pro";
-  src: url("/static/fonts/SN-Pro-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SN Pro";
-  src: url("/static/fonts/SN-Pro-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
+  font-family: SN Pro;
+  src: url(/quartz/static/fonts/SNPro-Italic-VariableFont_wght.ttf);  
 }
