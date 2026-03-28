@@ -20,22 +20,12 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: false,
+      fontOrigin: "local",
+      cdnCaching: true,
       typography: {
-        header: {
-          name: "SN Pro",
-          weights: [400, 700],
-        },
-        body: {
-          name: "SN Pro",
-          weights: [400, 600],
-          includeItalic: true,
-        },
-        title: {
-          name: "SN Pro",
-          weights: [400, 700],
-        },
+        header: "SN Pro",
+        body: "SN Pro",
+        title: "SN Pro",
         code: "IBM Plex Mono",
       },
       colors: {
