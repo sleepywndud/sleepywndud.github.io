@@ -91,14 +91,14 @@ export function googleFontHref(theme: Theme) {
   const bodyFont = formatFontSpecification("body", body)
   const codeFont = formatFontSpecification("code", code)
 
-  return `https://fonts.googleapis.com/css2?family=${headerFont}&family=${bodyFont}&family=${codeFont}&display=swap`
+  return `https://fonts.googleapis.com/css2?family=${headerFont.replace(/ /g, "+")}&family=${bodyFont.replace(/ /g, "+")}&family=${codeFont.replace(/ /g, "+")}&display=swap`
 }
 
 export function googleFontSubsetHref(theme: Theme, text: string) {
   const title = theme.typography.title || theme.typography.header
   const titleFont = formatFontSpecification("title", title)
 
-  return `https://fonts.googleapis.com/css2?family=${titleFont}&text=${encodeURIComponent(text)}&display=swap`
+  return `https://fonts.googleapis.com/css2?family=${titleFont.replace(/ /g, "+")}&text=${encodeURIComponent(text)}&display=swap`
 }
 
 export interface GoogleFontFile {
