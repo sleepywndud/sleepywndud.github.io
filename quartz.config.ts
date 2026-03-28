@@ -1,6 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-
 /**
  * Quartz 4 Configuration
  *
@@ -20,12 +19,20 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "local",
-      cdnCaching: true,
+      fontOrigin: "googleFonts",        // ← changed (needed for IBM Plex Mono)
+      cdnCaching: true,                 // ← kept as you had it
       typography: {
-        header: "SN Pro",
-        body: "SN Pro",
-        code: "IBM Plex Mono",
+        header: {
+          name: "SN Pro",
+          weights: [400, 700],          // you can add more e.g. [200, 300, 400, 700, 900]
+          includeItalic: true,
+        },
+        body: {
+          name: "SN Pro",
+          weights: [400, 700],
+          includeItalic: true,
+        },
+        code: "IBM Plex Mono",          // ← stays exactly as you had it (now loads correctly)
       },
       colors: {
         lightMode: {
