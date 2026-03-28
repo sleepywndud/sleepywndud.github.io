@@ -121,16 +121,15 @@ export async function processGoogleFonts(
   processedStylesheet: string
   fontFiles: GoogleFontFile[]
 }> {
-  const fontSourceRegex =
-    /url\((https:\/\/fonts.gstatic.com\/.+(?:\/|(?:kit=))(.+?)[.&].+?)\)\sformat\('(\w+?)'\);/g
+  const fontSourceRegex = /url\((https:\/\/fonts\.gstatic\.com\/s\/([^/]+)\/([^/]+)\/([^.]+)\.(\w+))\)\s+format\(['"](\w+)['"]\)/g
   const fontFiles: GoogleFontFile[] = []
   let processedStylesheet = stylesheet
 
   let match
   while ((match = fontSourceRegex.exec(stylesheet)) !== null) {
     const url = match[1]
-    const filename = match[2]
-    const extension = fontMimeMap[match[3].toLowerCase()]
+    const filename = match[4]
+    const extension = fontMimeMap[match[6].toLowerCase()] ?? match[5]
     const staticUrl = `https://${baseUrl}/static/fonts/${filename}.${extension}`
 
     processedStylesheet = processedStylesheet.replace(url, staticUrl)
