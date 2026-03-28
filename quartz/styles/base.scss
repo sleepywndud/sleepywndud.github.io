@@ -26,11 +26,18 @@ html {
   }
 }
 
+:root {
+  --titleFont: "SN Pro", "Schibsted Grotesk", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --headerFont: "Sn Pro", "Schibsted Grotesk", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --bodyFont: "SN Pro", "Source Sans Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
 body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--light);
-  font-family: "SN Pro" !important;
+  font-family: var(--bodyFont);
   color: var(--darkgray);
 }
 
