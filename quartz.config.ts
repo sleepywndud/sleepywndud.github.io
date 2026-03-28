@@ -23,8 +23,19 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: {
+          name: "SN Pro",
+          weights: [400, 700],
+        },
+        body: {
+          name: "SN Pro",
+          weights: [400, 600],
+          includeItalic: true,
+        },
+        title: {
+          name: "SN Pro",
+          weights: [400, 700],
+        },
         code: "IBM Plex Mono",
       },
       colors: {
