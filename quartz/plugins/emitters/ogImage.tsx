@@ -49,18 +49,25 @@ async function generateSocialImage(
     iconBase64,
   })
 
-  const svg = await satori(imageComponent, {
-    width,
-    height,
-    fonts,
-    loadAdditionalAsset: async (languageCode: string, segment: string) => {
-      if (languageCode === "emoji") {
-        return await loadEmoji(getIconCode(segment))
-      }
+  let svg: string
+  try {
+    svg = await satori(imageComponent, {
+      width,
+      height,
+      fonts,
+      loadAdditionalAsset: async (languageCode: string, segment: string) => {
+        if (languageCode === "emoji") {
+          return await loadEmoji(getIconCode(segment))
+        }
 
-      return languageCode
-    },
-  })
+        return languageCode
+      },
+    })
+  } catch (e: any) {
+    console.error("Satori error:", e)
+    console.error("Image component:", JSON.stringify(imageComponent, (key, value) => typeof value === 'bigint' ? value.toString() : value, 2))
+    throw e
+  }
 
   return sharp(Buffer.from(svg)).webp({ quality: 40 })
 }

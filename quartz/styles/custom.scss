@@ -2,13 +2,18 @@
 
 // put your custom CSS here!
 
-
-:root {
-  --titleFont: "SN Pro", "Schibsted Grotesk", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --headerFont: "SN Pro", "Schibsted Grotesk", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --bodyFont: "SN Pro", "Source Sans Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@font-face {
+  font-family: SN Pro;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("static/fonts/SNPro-VariableFont_wght.ttf") format("truetype");
 }
 
-body {
-  font-family: var(--bodyFont);
+@font-face {
+  font-family: SN Pro;
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("static/fonts/SNPro-Italic-VariableFont_wght.ttf") format("truetype");
 }
