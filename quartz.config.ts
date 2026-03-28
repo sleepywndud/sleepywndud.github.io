@@ -1,10 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
+
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Quartz 4",
@@ -18,14 +14,30 @@ const config: QuartzConfig = {
     baseUrl: "sleepywndud.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
+
     theme: {
       fontOrigin: "googleFonts",
-      cdnCaching: false,
+      cdnCaching: true,
+
       typography: {
-      header: "SN Pro",
-      body: "SN Pro",
-      code: "SN Pro",
-    },
+        title: {
+          name: "SN Pro",
+          weights: [400, 500, 600, 700],
+          includeItalic: true,
+        },
+        header: {
+          name: "SN Pro",
+          weights: [400, 500, 600, 700],
+          includeItalic: true,
+        },
+        body: {
+          name: "SN Pro",
+          weights: [400, 500, 600],
+          includeItalic: true,
+        },
+        code: "IBM Plex Mono",
+      },
+
       colors: {
         lightMode: {
           light: "#faf8f8",
@@ -52,6 +64,7 @@ const config: QuartzConfig = {
       },
     },
   },
+
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
@@ -87,7 +100,6 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
   },
