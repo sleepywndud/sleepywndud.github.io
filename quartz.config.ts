@@ -1,11 +1,14 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-
-
+/**
+ * Quartz 4 Configuration
+ *
+ * See https://quartz.jzhao.xyz/configuration for more information.
+ */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🔭",
+    pageTitle: "Quartz 4",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -13,33 +16,18 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "sleepywndud.github.io",
+    baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
-
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
-
       typography: {
-        title: {
-          name: "SN Pro",
-          weights: [400, 500, 600, 700],
-          includeItalic: true,
-        },
-        header: {
-          name: "SN Pro",
-          weights: [400, 500, 600, 700],
-          includeItalic: true,
-        },
-        body: {
-          name: "SN Pro",
-          weights: [400, 500, 600],
-          includeItalic: true,
-        },
+        header: "SN Pro",
+        body: "SN Pro",
+        title: "SN Pro",
         code: "IBM Plex Mono",
       },
-
       colors: {
         lightMode: {
           light: "#faf8f8",
@@ -66,7 +54,6 @@ const config: QuartzConfig = {
       },
     },
   },
-
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
@@ -102,6 +89,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
+      // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
   },
