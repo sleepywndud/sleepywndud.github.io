@@ -8,5 +8,15 @@
 
 @font-face {
   font-family: SN Pro;
-  src: url(/quartz/static/fonts/SNPro-Italic-VariableFont_wght.ttf);  
+  src: url(/quartz/static/fonts/SNPro-VariableFont_wght);  
+}
+
+:root {
+  --titleFont: "SN Pro", "Schibsted Grotesk", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --headerFont: "Sn Pro", "Schibsted Grotesk", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --bodyFont: "SN Pro", "Source Sans Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  font-family: var(--bodyFont);
 }
