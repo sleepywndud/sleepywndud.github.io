@@ -19,21 +19,13 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",        // ← changed (needed for IBM Plex Mono)
-      cdnCaching: true,                 // ← kept as you had it
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
       typography: {
-        header: {
-          name: "SN Pro",
-          weights: [400, 700],          // you can add more e.g. [200, 300, 400, 700, 900]
-          includeItalic: true,
-        },
-        body: {
-          name: "SN Pro",
-          weights: [400, 700],
-          includeItalic: true,
-        },
-        code: "IBM Plex Mono",          // ← stays exactly as you had it (now loads correctly)
-      },
+      header: "SN Pro",
+      body: "SN Pro",
+      code: "SN Pro",
+    },
       colors: {
         lightMode: {
           light: "#faf8f8",
