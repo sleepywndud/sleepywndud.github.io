@@ -25,7 +25,6 @@ const config: QuartzConfig = {
       typography: {
         header: "SN Pro",
         body: "SN Pro",
-        title: "SN Pro",
         code: "IBM Plex Mono",
       },
       colors: {

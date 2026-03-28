@@ -3,16 +3,15 @@
 @use "./variables.scss" as *;
 @use "./syntax.scss";
 @use "./callouts.scss";
-@use "./custom.scss";
 
 @font-face {
   font-family: SN Pro;
-  src: url(/quartz/static/fonts/SNPro-VariableFont_wght.ttf);  
+  src: url(/static/fonts/SNPro-VariableFont_wght.ttf);  
 }
 
 @font-face {
   font-family: SN Pro;
-  src: url(/quartz/static/fonts/SNPro-Italic-VariableFont_wght.ttf);  
+  src: url(/static/fonts/SNPro-Italic-VariableFont_wght.ttf);  
 }
 
 html {
