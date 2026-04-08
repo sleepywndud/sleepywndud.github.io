@@ -20,3 +20,5 @@ Let the point $$A$$ represent $$z$$ in the Argand diagram and the points $$B$$, 
 If $$\angle ABC=60^o$$ and $$BC=1.5$$, find the area of the quadrilateral ABCD.
 
 스칼라십에서는 종종 이런 ~~더러운~~ 문제들이 나온다.
+
+그리고 스칼라십 문제들을 풀면서 느낀 점인데, 아무리 쉬운 문제더라도, 스칼라십에서는 "이런거도 된다고??" 하는 것 들도 다 써줘야된다. 그냥 쉽게 말하면, 가능한 **모든** 답을 써야된다. 왜냐면 "이런거도 된다고??" 하는 답들이 종종 추가점수를 주기 때문이다.
