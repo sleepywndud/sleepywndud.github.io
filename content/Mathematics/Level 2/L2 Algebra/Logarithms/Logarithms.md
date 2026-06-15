@@ -36,6 +36,6 @@ We put the base as 2, and argument as 4096. This tells us "how many times we hav
 
 $$\log_{2}4096=x$$
 
-$\log_{2}4096$ can be put into a graphic calculator straight to get the answer. In scientific calculators, we have to use one of the log properties (or rules). 
+$\log_{2}4096$ can be put into a graphic calculator straight to get the answer. In scientific calculators, we have to use one of the log properties (or rules).
 
 $$\therefore x=12$$
