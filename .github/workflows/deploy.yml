@@ -18,19 +18,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build Quartz
-        uses: konstfish/quartz-build-action@v7
-        with:
-          source: content
-          page_title: "🔭"
-          page_base_url: "sleepywndud.github.io"
+        run: npx quartz build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
 
   deploy:
     needs: build
