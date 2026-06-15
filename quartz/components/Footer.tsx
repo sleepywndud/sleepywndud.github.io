@@ -1,29 +1,27 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/footer.scss"
-import { version } from "../../package.json"
-import { i18n } from "../i18n"
 
-interface Options {
-  links: Record<string, string>
-}
-
-export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+export default ((_opts?: unknown) => {
+  const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
-    const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          Copyright (c) {year} Juyoung Park.<br />
+          All rights reserved.
         </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
+        <blockquote>
+          <strong>
+            ALL CONTENT PROVIDED IN THIS WEBSITE ARE LICENSED UNDER THE{" "}
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt">
+              Creative Commons Attribution Non-Commercial No-Derivatives
+            </a>{" "}
+            (CC-BY-NC-ND) LICENSE.
+          </strong>
+        </blockquote>
+        <p>
+          Any other inquiries, please email <code>22222w@duck.com</code>, or send me a DM on Discord <code>wndx2</code>.
+        </p>
       </footer>
     )
   }
