@@ -14,20 +14,20 @@ For example, to move a graph to the left by 2:
 
 $$y=x^2$$
 
-We have to change $x$ to '$x+2$', since signs are written in the opposite direction you're wanting to go (grid paper-wise).
+We have to change $x$ to '$x-(-2)$', since signs are written in the opposite direction you're wanting to go (grid paper-wise).
 
 Then, the translated (left by 2) graph would be: 
 
-$$y=(x+2)^2$$
+$$y=(x-(-2))^2$$
 
-Using this same logic, to translate a graph horizontally by the value of $p$, then $x$ would have to replaced by '$x+p$'. 
+Using this same logic, to translate a graph horizontally by the value of $p$, then $x$ would have to replaced by '$x-p$'. 
 
 If a domain exists, the $x$ in the domain must be replaced as well, or the graph would disappear once the value of $p$ passes the domain for the original function.
 
 To represent this on Desmos, the slider for the $p$ value must be added. 
 
 
-Using the exact same logic from above, to translate a grah vertically by the value of $q$, $y$ would have to be replaced by '$y+q$'.
+Using the exact same logic from above, to translate a grah vertically by the value of $q$, $y$ would have to be replaced by '$y-q$'.
 
 If a range exists, the $y$ in the range must be replaced as well, or the graph would disappear once the value of $q$ passes the range for the original function.
 
