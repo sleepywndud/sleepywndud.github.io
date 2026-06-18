@@ -4,7 +4,11 @@
 
 Midpoints are point(s) that is in the middle of two points. To calculate the midpoint, the formula below must be used:
 
-$$(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2})$$
+
+$$
+(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2})
+$$
+
 
 To get a midpoint, 2 points are needed (for obvious reasons). The first point would be: $(x_{1}\space, y_{1})$, and the second would be $(x_{2}\space, y_{2})$. 
 
@@ -24,7 +28,11 @@ The same principle applies when calculating the centroid of a shape.
 
 Depending on the number of the vertices, the equation varies. Below is an equation of a centroid of a triangle:
 
-$$(\frac{x_{1}+x_{2}+x_{3}}{3}, \frac{y_{1}+y_{2}+y_{3}}{3})$$
+
+$$
+(\frac{x_{1}+x_{2}+x_{3}}{3}, \frac{y_{1}+y_{2}+y_{3}}{3})
+$$
+
 
 If the question is about finding centroid of a square, then the numerator would be: $(x_{1}+x_{2}+x_{3}+x_{4})$, with the denominator being $4$.
 

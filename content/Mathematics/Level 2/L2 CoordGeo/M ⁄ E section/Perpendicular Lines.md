@@ -6,7 +6,11 @@ Perpendicular lines are lines that intersent each other at $90^o$.
 
 To prove this, you can use the equation below:
 
-$$m_{1}\times m_{2}=-1$$
+
+$$
+m_{1}\times m_{2}=-1
+$$
+
 
 $m_{1}$ is the gradient of the first line, and $m_{2}$ is the gradient of the second line.
 

@@ -26,19 +26,39 @@ You must show 'all' relevant working for the excellence.
 
 $m_{BC}:$ (gradient of $BC$)
 
-$$m_{BC}=\frac{4-1}{-3-5}=-\frac{3}{8}$$
+
+$$
+m_{BC}=\frac{4-1}{-3-5}=-\frac{3}{8}
+$$
+
 
 $Eq_{BC}:$ (equation of $BC$)
 
-$$y-4=-\frac{3}{8}(x+3)$$
 
-$$y=-\frac{3}{8}x+\frac{23}{8}$$
+$$
+y-4=-\frac{3}{8}(x+3)
+$$
+
+
+
+$$
+y=-\frac{3}{8}x+\frac{23}{8}
+$$
+
 
 $Dist_{BC}:$ (distance of BC)
 
-$$\sqrt{ (-3-5)^2+(4-1)^2 }$$
 
-$$8.54cm$$
+$$
+\sqrt{ (-3-5)^2+(4-1)^2 }
+$$
+
+
+
+$$
+8.54cm
+$$
+
 
 To find the height, I'm going to find a equation of a line that's perpendicular to the base of the triangle, that passes through $A$.
 
@@ -46,7 +66,11 @@ This would get me the height of the triangle:
 
 $\perp m_{BC}:$ (perpendicular gradient of $BC$)
 
-$$=\frac{8}{3}$$
+
+$$
+=\frac{8}{3}
+$$
+
 
 ..as    $m_{1}\times m_{2}=-1$.
 
@@ -54,38 +78,90 @@ Equation passing through $A$ $(DC)$:
 
 *(Let $D$ be the perpendicular intersection of the two lines)*
 
-$$y+2=\frac{8}{3}(x+2)$$
 
-$$y=\frac{8}{3}x+\frac{10}{3}$$
+$$
+y+2=\frac{8}{3}(x+2)
+$$
+
+
+
+$$
+y=\frac{8}{3}x+\frac{10}{3}
+$$
+
 
 $Eq_{BC}:$
 
-$$y-4=-\frac{3}{8}(x+3)$$
 
-$$y=-\frac{3}{8}x+\frac{23}{8}$$
+$$
+y-4=-\frac{3}{8}(x+3)
+$$
+
+
+
+$$
+y=-\frac{3}{8}x+\frac{23}{8}
+$$
+
 
 Finding the intersection $(D)$:
 
-$$-\frac{3}{8}x+\frac{23}{8}=\frac{8}{3}x+\frac{10}{3}$$
 
-$$\frac{73}{24}x=-\frac{11}{24}$$
+$$
+-\frac{3}{8}x+\frac{23}{8}=\frac{8}{3}x+\frac{10}{3}
+$$
 
-$$x=-\frac{11}{73}$$
 
-$$y=\frac{214}{73}$$
+
+$$
+\frac{73}{24}x=-\frac{11}{24}
+$$
+
+
+
+$$
+x=-\frac{11}{73}
+$$
+
+
+
+$$
+y=\frac{214}{73}
+$$
+
 
 Distance of the base:
 
-$$8.54cm$$
+
+$$
+8.54cm
+$$
+
 
 Distance of the height: 
 
-$$\sqrt{ \left( -\frac{11}{73}+2 \right)^2+\left( \frac{214}{73} +2\right)^2 }$$
 
-$$=5.27cm$$
+$$
+\sqrt{ \left( -\frac{11}{73}+2 \right)^2+\left( \frac{214}{73} +2\right)^2 }
+$$
+
+
+
+$$
+=5.27cm
+$$
+
 
 Area can be found:
 
-$$\frac{8.54\times 5.27}{2}$$
 
-$$Area=22.50cm^2$$
+$$
+\frac{8.54\times 5.27}{2}
+$$
+
+
+
+$$
+Area=22.50cm^2
+$$
+
