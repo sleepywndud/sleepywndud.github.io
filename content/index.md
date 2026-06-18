@@ -11,6 +11,8 @@ This page is publically available for anyone to edit [here](https://github.com/s
 Please note that:
 - Some notes may be old, and be considered as outdated.
 - Internal standards are different per-school.
-- Some notes aren't fully finished, and isn't intended for completion.
+- Some notes aren't fully finished, and isn't planned for completion.
+- All external past papers from 2013~2025 (except Probability Methods) can be found in this website, with schedules, too.
+- Some (school) mentoring resources may be added to this page.
 
 > *This page may contain mistakes. If you spot one, feel free to shoot me an email to: `22222w@duck.com`, or feel free to fix it yourself.*
