@@ -12,7 +12,7 @@ export default ((_opts?: unknown) => {
         </p>
         <blockquote>
           <strong>
-            ALL CONTENT PROVIDED IN THIS WEBSITE ARE LICENSED UNDER THE{" "}
+            ALL CONTENT CREATED BY JUYOUNG PARK IN THIS WEBSITE ARE LICENSED UNDER THE{" "}
             <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt">
               Creative Commons Attribution Non-Commercial No-Derivatives
             </a>{" "}
