@@ -51,6 +51,8 @@ title: Past Papers
 <details>
 <summary><b>Complex Numbers (91577)</b></summary>
 
+[Collated Excellence Questions for 91577 Complex Numbers](Past-Papers/L3/Complex-Numbers/91577%20ALL%20EXCELLENCE%20QUESTIONS.pdf)
+
 | Year | Assessment Sheet | Answer Sheet |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L3/Complex-Numbers/Assessment/2025.pdf) | [Answers](Past-Papers/L3/Complex-Numbers/Answers/2025.pdf) |
@@ -118,6 +120,8 @@ title: Past Papers
 <details>
 <summary><b>Algebra (91261)</b></summary>
 
+[Collated Excellence Questions for 91261 Algebra](Past-Papers/L2/Algebra/91261-excellence(2012~2025).pdf)
+
 | Year | Assessment Sheet | Answer Sheet |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L2/Algebra/Assessment/2025.pdf) | [Answers](Past-Papers/L2/Algebra/Answers/2025.pdf) |
@@ -139,6 +143,8 @@ title: Past Papers
 
 <details>
 <summary><b>Calculus (91262)</b></summary>
+
+[Collated Excellence Questions for 91262 Calculus](Past-Papers/L2/Calculus/91262-excellence(2012~2025).pdf)
 
 | Year | Assessment Sheet | Answer Sheet |
 | :--- | :--- | :--- |
