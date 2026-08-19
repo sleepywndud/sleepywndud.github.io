@@ -20,7 +20,7 @@ export default ((_opts?: unknown) => {
           </strong>
         </blockquote>
         <p>
-          Any other inquiries, please email <code>22222w@duck.com</code>, or send me a DM on Discord <code>wndx2</code>.
+          Any other inquiries, please email <code>juyoung.parkk8@gmail.com</code>, or send me a DM on Discord <code>wndx2</code>.
         </p>
       </footer>
     )
