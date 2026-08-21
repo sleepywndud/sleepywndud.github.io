@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🎈",
+    pageTitle: "🍋",
     pageTitleSuffix: " ㅣ cai jiu duo lian",
     enableSPA: true,
     enablePopovers: true,
@@ -35,10 +35,10 @@ const config: QuartzConfig = {
           gray: "#888888",
           darkgray: "#2e2e2e",
           dark: "#141414",
-          secondary: "#f20179",
-          tertiary: "#ff54a9",
+          secondary: "#b69f1a",
+          tertiary: "#d8c13f",
           highlight: "#A8E7CF20",
-          textHighlight: "#A8E7CF55",
+          textHighlight: "#e6e7a855",
         },
         darkMode: {
           light: "#000",
@@ -46,9 +46,9 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#f20179",
-          tertiary: "#ff54a9",
-          highlight: "#8f9fa926",
+          secondary: "#ffd800",
+          tertiary: "#ffe761",
+          highlight: "#a9a78f26",
           textHighlight: "#b3aa0288",
         },
       },
