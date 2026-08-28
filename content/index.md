@@ -4,7 +4,7 @@ title: wndud's Archive
 
 ---
 
-This website is an archive of all the notes I made for myself, my juniors, my mentees, or my friends for NCEA Level 2 and 3 Calculus, Mathematics and Statistics.
+This website is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, or my friends for NCEA Level 2 and 3 Calculus, Mathematics and Statistics.
 
 This page is publically available for anyone to edit [here](https://github.com/sleepywndud/sleepywndud.github.io).
 
