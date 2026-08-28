@@ -1,14 +1,9 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "❄️",
+    pageTitle: "E",
     pageTitleSuffix: " ㅣ cai jiu duo lian",
     enableSPA: true,
     enablePopovers: true,
@@ -20,12 +15,12 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "SN Pro",
-        body: "SN Pro",
-        title: "SN Pro",
+        header: "CMU Serif",
+        body: "CMU Serif",
+        title: "CMU Serif",
         code: "IBM Plex Mono",
       },
       colors: {
@@ -35,10 +30,10 @@ const config: QuartzConfig = {
           gray: "#888888",
           darkgray: "#2e2e2e",
           dark: "#141414",
-          secondary: "#0aa7a7",
-          tertiary: "#23a6a6",
+          secondary: "#ff00ff",
+          tertiary: "#ff88ff",
           highlight: "#A8E7CF20",
-          textHighlight: "#a8e7e755",
+          textHighlight: "#ff88ffab",
         },
         darkMode: {
           light: "#000",
@@ -46,10 +41,10 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#00ffff",
-          tertiary: "#8bffff",
+          secondary: "#ff00ff",
+          tertiary: "#ff88ff",
           highlight: "#a9a78f26",
-          textHighlight: "#02b3b088",
+          textHighlight: "#ff88ffab",
         },
       },
     },

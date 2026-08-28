@@ -3,25 +3,72 @@
 // put your custom CSS here!
 
 :root {
-    --titleFont: "SN Pro", "Paperlogy";
-    --headerFont: "SN Pro", "Paperlogy";
-    --headingFont: "SN Pro", "Paperlogy";
-    --bodyFont: "SN Pro", "Paperlogy";
+    --titleFont: "CMU Serif", "Paperlogy";
+    --headerFont: "CMU Serif", "Paperlogy";
+    --headingFont: "CMU Serif", "Paperlogy";
+    --bodyFont: "CMU Serif", "Paperlogy";
 }
 
-
 @font-face {
-  font-family: SN Pro;
+  font-family: "CMU Serif";
   font-style: normal;
-  font-weight: 200 900;
+  font-weight: normal;
   font-display: swap;
-  src: url("static/fonts/SNPro-VariableFont_wght.ttf") format("truetype");
+  src: url("static/fonts/ComputerModern-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: SN Pro;
-  font-style: italic;
-  font-weight: 200 900;
+  font-family: "CMU Serif";
+  font-style: normal;
+  font-weight: bold;
   font-display: swap;
-  src: url("static/fonts/SNPro-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("static/fonts/ComputerModern-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("static/fonts/ComputerModern-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("static/fonts/ComputerModern-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("static/fonts/IBMPlexMono-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("static/fonts/IBMPlexMono-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("static/fonts/IBMPlexMono-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("static/fonts/IBMPlexMono-BoldItalic.otf") format("opentype");
 }

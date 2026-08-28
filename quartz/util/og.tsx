@@ -14,31 +14,31 @@ export async function getSatoriFonts(
   headerFont: FontSpecification,
   bodyFont: FontSpecification
 ) {
-  const snProRegularPath = joinSegments(QUARTZ, "static", "fonts", "SNPro-Regular.ttf")
-  const snProBoldPath = joinSegments(QUARTZ, "static", "fonts", "SNPro-Bold.ttf")
-  const snProItalicPath = joinSegments(QUARTZ, "static", "fonts", "SNPro-Italic.ttf")
+  const cmuRegularPath = joinSegments(QUARTZ, "static", "fonts", "ComputerModern-Regular.ttf")
+  const cmuBoldPath = joinSegments(QUARTZ, "static", "fonts", "ComputerModern-Bold.ttf")
+  const cmuItalicPath = joinSegments(QUARTZ, "static", "fonts", "ComputerModern-Italic.ttf")
 
   const [regularData, boldData, italicData] = await Promise.all([
-    fs.readFile(path.resolve(snProRegularPath)),
-    fs.readFile(path.resolve(snProBoldPath)),
-    fs.readFile(path.resolve(snProItalicPath)),
+    fs.readFile(path.resolve(cmuRegularPath)),
+    fs.readFile(path.resolve(cmuBoldPath)),
+    fs.readFile(path.resolve(cmuItalicPath)),
   ])
 
   const fonts: SatoriOptions["fonts"] = [
     {
-      name: "SN Pro",
+      name: "CMU Serif",
       data: regularData,
       weight: 400,
       style: "normal",
     },
     {
-      name: "SN Pro",
+      name: "CMU Serif",
       data: italicData,
       weight: 400,
       style: "italic",
     },
     {
-      name: "SN Pro",
+      name: "CMU Serif",
       data: boldData,
       weight: 700,
       style: "normal",
@@ -103,7 +103,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         width: "100%",
         backgroundColor: cfg.theme.colors[colorScheme].light,
         padding: "2.5rem",
-        fontFamily: "SN Pro",
+        fontFamily: "CMU Serif",
       }}
     >
       <div
@@ -128,7 +128,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
             display: "flex",
             fontSize: 32,
             color: cfg.theme.colors[colorScheme].gray,
-            fontFamily: "SN Pro",
+            fontFamily: "CMU Serif",
           }}
         >
           {cfg.baseUrl}
@@ -146,7 +146,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
           style={{
             margin: 0,
             fontSize: useSmallerFont ? 64 : 72,
-            fontFamily: "SN Pro",
+            fontFamily: "CMU Serif",
             fontWeight: 700,
             color: cfg.theme.colors[colorScheme].dark,
             lineHeight: 1.2,
