@@ -3,7 +3,10 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "⍢",
+    pageTitle: "・▾・",
+    // pageTitle: ">⩊<.ᐟ",
+    // pageTitle: "˖ ݁♬⋆.˚𝄞",
+    // pageTitle: "\\(^o^)/",
     pageTitleSuffix: " ㅣ cai jiu duo lian",
     enableSPA: true,
     enablePopovers: true,
