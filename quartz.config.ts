@@ -7,7 +7,7 @@ const config: QuartzConfig = {
     // pageTitle: ">⩊<.ᐟ",
     // pageTitle: "˖ ݁♬⋆.˚𝄞",
     // pageTitle: "\\(^o^)/",
-    pageTitleSuffix: " ㅣ cai jiu duo lian",
+    pageTitleSuffix: " ㅣ Ni Brain Too Sht",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
