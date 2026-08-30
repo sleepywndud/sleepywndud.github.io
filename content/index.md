@@ -2,7 +2,7 @@
 title: Ni Brain Too Sht
 ---
 
----
+<img src="/images/banner-n.png" alt="" class="footer-banner" />
 
 Ni Brain Too Sht (NBTS) is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, or my friends for NCEA Level 2 and 3 Calculus, Mathematics and Statistics.
 
