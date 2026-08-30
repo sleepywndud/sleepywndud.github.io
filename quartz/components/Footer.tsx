@@ -23,6 +23,7 @@ export default ((_opts?: unknown) => {
           Any other inquiries, please email <code>juyoung.parkk8@gmail.com</code>, or send me a DM on Discord <code>wndx2</code>.
         </p>
         <img src="/images/banner-n.png" alt="" class="footer-banner" />
+        <p>angy and hapy wish u a good👍 day</p>
       </footer>
     )
   }
