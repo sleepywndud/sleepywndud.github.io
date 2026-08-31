@@ -1,0 +1,69 @@
+#L2CHEM 
+
+---
+
+Determining the shape of molecule is crucial for this standard. 
+
+Shapes can be determined by looking at how many bonding pairs, and lone pairs there are in the lewis structure. 
+
+For example, when we're given the lewis structure for $H_{2}O$ we should first note that the lewis structure is complete, since hydrogen has 2, and oxygen has 8 valence electrons. Now, we need to look at the central atom, which in this case is oxygen. A central atom is very self-explanatory, and is obvious. As we can see in the lewis diagram, the central atom, oxygen, has 4 regions of 'electron density', which refers to the groups of electrons around the central atom. We can see 4 groups of electrons (grouped into 2s) -- 2 regions bonded to nothing, and the other 2 regions bonded to hydrogen each. 
+
+When we know that the central atom has 4 regions of electron density, we know that the *parent shape* of this molecule is 'tetrahedral' (there ain't such a way to explain this -- remember it). From the 4 regions of electron density, 2 regions are bonding pairs, since 2 regions are attached to 1 hydrogen each. Therefore, I can say that the central atom has 2 bonding pairs.
+
+When there are 4 regions of electron density, and 2 of the regions are bonding pairs, while the other 2 regions are lone pairs (regions bonded to nothing), it has the *overall shape* of 'bent' (again, there ain't such a way to explain this -- remember it).
+
+Here is a good flowchart you can follow:
+
+4EDR:\
+	*parent shape: tetrahedral*\
+		2BP, 2LP:\
+			*overall shape: bent*\
+		4BP, 0LP:\
+			*overall shape: tetrahedral*\
+		3BP, 1LP:\
+			*overall shape: trigonal pyramidal*
+
+3EDR:\
+	*parent shape: trigonal planar*\
+		3BP, 0LP:\
+			*overall shape: trigonal planar*\
+		2BP, 1LP:\
+			*overall shape: bent*\
+		1BP, 2LP:\
+			*overall shape: linear*
+
+2EDR:\
+	*parent shape: linear*\
+		2BP, 0LP:\
+			*overall shape: linear*\
+		1BP, 1LP:\
+			*overall shape: linear*
+
+1EDR:\
+	*parent shape: linear*\
+		1BP, 0LP:\
+			*overall shape: linear*
+
+---
+
+You should also remember the angles that each shape has. 
+
+Tetrahedral: $109.5^o$,\
+Trigonal Planar: $120^o$,\
+Trigonal Pyramidal: $109.5^o$,\
+Bent: $109.5^o$,\
+Linear: $180^o$.
+
+---
+
+There will most likely be a question that asks to compare and contrast the shape and bond angles or something -- follow the CRABS structure:\
+C: Central Atom\
+R: Repulsion\
+A: Arrangement\
+B: BP and LP (NBP)\
+S: Shape
+
+e.g.\
+[C] $H_{2}O$ has a central atom of $O$, which has 4 regions of electron density. [R] All regions of electron density repel each other to maximize separation and minimize overall repulsion. [A] This ends up with a tetrahedral arrangement with a bond angle of $109.5^o$. [B] Since $H_{2}O$ has 2 bonding pairs, and 2 lone pairs, [S] this results in an overall shape of bent.
+
+Free excellence using the CRABS structure. 
