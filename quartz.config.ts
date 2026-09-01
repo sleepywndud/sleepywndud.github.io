@@ -2,7 +2,7 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 // Base color
-const SECONDARY_DARK = "#ffa3ff"
+const SECONDARY_DARK = "#a3daff"
 
 function hexToHsl(hex: string): [number, number, number] {
   const r = parseInt(hex.slice(1, 3), 16) / 255
@@ -58,7 +58,8 @@ const TERTIARY_LIGHT = hslToHex(lightH, lightS, Math.min(lightL + 20, 90))
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "NBTS ・▾・",
+    pageTitle: "🫵🧠2️⃣💩",
+    // pageTitle: "NBTS ・▾・",
     // pageTitle: ">⩊<.ᐟ",
     // pageTitle: "˖ ݁♬⋆.˚𝄞",
     // pageTitle: "\\(^o^)/",
