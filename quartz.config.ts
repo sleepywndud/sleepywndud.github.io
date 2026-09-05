@@ -2,7 +2,7 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 // Base color
-const SECONDARY_DARK = "#ff0000"
+const SECONDARY_DARK = "#5865f2"
 
 function hexToHsl(hex: string): [number, number, number] {
   const r = parseInt(hex.slice(1, 3), 16) / 255
@@ -95,6 +95,17 @@ const config: QuartzConfig = {
           highlight: `${SECONDARY_LIGHT}22`,
           textHighlight: `${SECONDARY_LIGHT}33`,
         },
+        // lightMode: {
+        //   light: "#ff0000",
+        //   lightgray: "#0000ff",
+        //   gray: "#00ff00",
+        //   darkgray: "#0000ff",
+        //   dark: "#0000ff",
+        //   secondary: "#00ff00",
+        //   tertiary: "#00ff00",
+        //   highlight: "#00ff00",
+        //   textHighlight: "#00ff00",
+        // },
         darkMode: {
           light: "#000",
           lightgray: "#393639",

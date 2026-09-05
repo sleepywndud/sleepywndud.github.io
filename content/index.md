@@ -15,6 +15,9 @@ Ni Brain Too Sht (NBTS) is an archive of all the notes, questions, and tutorials
 - Some notes aren't fully finished, and isn't planned for completion.
 - External past papers for L2 and L3, from 2013~2025 (except Probability Methods) can be found [here](Past-Papers.md), with schedules, too.
 - Scholarship past-papers can also be found [here](Past-Papers.md).
+- Scholarship Calculus is explained in Korean. Use a translator if you need.
 - Some (school) mentoring resources may be added to this page.
+
+> [!fail] Do NOT convert to light mode - you will DIE 💀 !!!
 
 > *This page may contain mistakes. If you spot one, feel free to shoot me an email to: `22222w@duck.com`, or feel free to fix it yourself.*
