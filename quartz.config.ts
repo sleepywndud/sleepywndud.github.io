@@ -1,8 +1,8 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-// Base color
 const SECONDARY_DARK = "#FF9900"
+const MAIN_FONT = "ChosunGu"
 
 function hexToHsl(hex: string): [number, number, number] {
   const r = parseInt(hex.slice(1, 3), 16) / 255
@@ -78,10 +78,10 @@ const config: QuartzConfig = {
       fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "CMU Serif",
-        body: "CMU Serif",
-        title: "CMU Serif",
-        code: "IBM Plex Mono",
+        header: MAIN_FONT,
+        body: MAIN_FONT,
+        title: MAIN_FONT,
+        code: MAIN_FONT,
       },
       colors: {
         // lightMode: {
