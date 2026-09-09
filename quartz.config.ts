@@ -1,7 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-const SECONDARY_DARK = "#ff00ff"
+const SECONDARY_DARK = "#ff5858"
 const MAIN_FONT = "ChosunGu"
 
 function hexToHsl(hex: string): [number, number, number] {
