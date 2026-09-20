@@ -23,7 +23,7 @@ If you aren't given the MP, then you rely on their structure -- how it bonds to 
 
 First, draw the lewis structure for the molecule. 
 
-> [!danger] From here, my explanation gets quite intense, but it works. If someone has a better explanation, someone PLEASE contact me 😭.
+> [!danger] From here, my explanation gets quite intense, but it works. If someone has a better explanation, PLEASE contact me 😭.
 
 Then, we should know how many 'bonds' the molecule can have, to achieve a full octet. This can be calculated by using this formula:
 $$
