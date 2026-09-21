@@ -1,8 +1,9 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-const SECONDARY_DARK = "#227722"
+const SECONDARY_DARK = "#463df4"
 const MAIN_FONT = "ChosunGu"
+const CODE_FONT = "BrassMono Code"
 
 function hexToHsl(hex: string): [number, number, number] {
   const r = parseInt(hex.slice(1, 3), 16) / 255
@@ -81,31 +82,31 @@ const config: QuartzConfig = {
         header: MAIN_FONT,
         body: MAIN_FONT,
         title: MAIN_FONT,
-        code: MAIN_FONT,
+        code: CODE_FONT,
       },
       colors: {
-        // lightMode: {
-        //   light: "#ffffff",
-        //   lightgray: "#e8e8e8",
-        //   gray: "#888888",
-        //   darkgray: "#2e2e2e",
-        //   dark: "#141414",
-        //   secondary: SECONDARY_LIGHT,
-        //   tertiary: TERTIARY_LIGHT,
-        //   highlight: `${SECONDARY_LIGHT}22`,
-        //   textHighlight: `${SECONDARY_LIGHT}33`,
-        // },
         lightMode: {
-          light: "#ff0000",
-          lightgray: "#0000ff",
-          gray: "#00ff00",
-          darkgray: "#0000ff",
-          dark: "#0000ff",
-          secondary: "#00ff00",
-          tertiary: "#00ff00",
-          highlight: "#00ff00",
-          textHighlight: "#00ff00",
+          light: "#ffffff",
+          lightgray: "#e8e8e8",
+          gray: "#888888",
+          darkgray: "#2e2e2e",
+          dark: "#141414",
+          secondary: SECONDARY_LIGHT,
+          tertiary: TERTIARY_LIGHT,
+          highlight: `${SECONDARY_LIGHT}22`,
+          textHighlight: `${SECONDARY_LIGHT}33`,
         },
+        // lightMode: {
+        //   light: "#ff0000",
+        //   lightgray: "#0000ff",
+        //   gray: "#00ff00",
+        //   darkgray: "#0000ff",
+        //   dark: "#0000ff",
+        //   secondary: "#00ff00",
+        //   tertiary: "#00ff00",
+        //   highlight: "#00ff00",
+        //   textHighlight: "#00ff00",
+        // },
         darkMode: {
           light: "#000",
           lightgray: "#393639",

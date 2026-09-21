@@ -73,3 +73,35 @@
   font-display: swap;
   src: url("static/fonts/IBMPlexMono-BoldItalic.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "BrassMono Code";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("static/fonts/BrassMonoCode-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BrassMono Code";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("static/fonts/BrassMonoCode-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BrassMono Code";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("static/fonts/BrassMonoCode-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BrassMono Code";
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("static/fonts/BrassMonoCode-BoldItalic.ttf") format("truetype");
+}
