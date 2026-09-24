@@ -1,8 +1,8 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-const SECONDARY_DARK = "#463df4"
-const MAIN_FONT = "ChosunGu"
+const SECONDARY_DARK = "#f4c93d"
+const MAIN_FONT = "ChosunSm"
 const CODE_FONT = "BrassMono Code"
 
 function hexToHsl(hex: string): [number, number, number] {
