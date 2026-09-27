@@ -10,6 +10,17 @@ export default ((_opts?: unknown) => {
           Copyright (c) {year} Juyoung Park.<br />
           All rights reserved.
         </p>
+        <br/>
+        <ul>
+          <li>
+            <a href="/Privacy-Policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/CONTRIBUTING">Contributing</a>
+          </li>
+        </ul>
+        <img src="/images/banner-n.png" alt="" class="footer-banner" />
+        <br/>
         <blockquote>
           <strong>
             ALL CONTENT CREATED BY JUYOUNG PARK IN THIS WEBSITE ARE LICENSED UNDER THE{" "}
@@ -20,10 +31,8 @@ export default ((_opts?: unknown) => {
           </strong>
         </blockquote>
         <p>
-          Any other inquiries, please email <code>juyoung.parkk8@gmail.com</code>, or send me a DM on Discord <code>wndx2</code>.
+          Any inquiries, please email <code>juyoung.parkk8@gmail.com</code>, or send me a DM on Discord <code>wndx2</code>.
         </p>
-        <img src="/images/banner-n.png" alt="" class="footer-banner" />
-        <p>angy and hapy wish u a good👍 day</p>
       </footer>
     )
   }
