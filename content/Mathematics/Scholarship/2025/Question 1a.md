@@ -1,31 +1,24 @@
-#SCH_CALC 
+#SCH_CALC #L3CALC 
 
 ---
-
-(2s)
-
-이 문제는 아래 방정식의 solution을 구하는 문제입니다.
 $$
 \sqrt[3]{ 125^{x^{3}-5x^{2}+11x-3 }}=\sqrt[4]{ 5^{4x^{2}+12} }
 $$
-일단 125를 $5^3$으로 바꿔줍니다:
+Change the $125 \to 5^3$:
 $$
 \sqrt[3]{ 5^{3(x^{3}-5x^{2}+11x-3 )}}=\sqrt[4]{ 5^{4x^{2}+12} }
 $$
-이제, 루트가 마음에 들지 않으니 바꿔주면:
+Change the $\sqrt{  }$ to index form:
 $$
 \left(5^{3(x^{3}-5x^{2}+11x-3 )}\right)^{\frac{1}{3}}=\left(5^{4x^{2}+12 }\right)^{\frac{1}{4}} \iff 5^{x^{3}-5x^{2}+11x-3}=5^{x^{2}+3}
 $$
-대충 simplify가 됩니다.
-이제 index rule을 쓰면:
+After simplification, and after using the index rule:
 $$
 x^{3}-5x^{2}+11x-3=x^{2}+3 \iff x^{3}-6x^{2}+11x-6=0
 $$
-3차방정식이 나옵니다. 물론 계산기를 쓰면 빠르겠지만,\
-혹시 계산기를 썼다고 억까를 당할 수도 있으니 직접 해보도록 하죠.\
-synthetic division을 사용할겁니다.\
-뭐로 나누냐? 저도 몰라요\
-보통 0, 1, 2가 되는 경우가 많으니까 1로 찍어보면:
+We get a cubic equation. 
+
+Solving synthetically with 1 (guess):
 $$
 \begin{array}{r|rrrr}
    & 1 & -6 & 11 & -6 \\
@@ -34,7 +27,7 @@ $$
   & 1 & -5 & 6  & \boxed{0}
 \end{array}
 $$
-운이 좋았습니다. solution중 하나가 1인걸 알았으니 $\implies(x-1)(x^{2}-5x+6)=0$.
+$1$ is a solution, and hence the other solutions are $2$ and $3$!
 $$
 \implies \boxed{x=1, 2, 3}
 $$
