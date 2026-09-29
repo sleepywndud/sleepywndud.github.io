@@ -1,9 +1,11 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/footer.scss"
+import { joinSegments, pathToRoot } from "../util/path"
 
 export default ((_opts?: unknown) => {
-  const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
+    const baseDir = pathToRoot(fileData.slug!)
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
@@ -15,16 +17,16 @@ export default ((_opts?: unknown) => {
           <tbody>
             <tr>
               <td>
-                <a href="Others/Terms-of-Service">Terms of Service</a>
+                <a href={joinSegments(baseDir, "Others/Terms-of-Service")}>Terms of Service</a>
               </td>
               <td>
-                <a href="Others/Privacy-Policy">Privacy Policy</a>
+                <a href={joinSegments(baseDir, "Others/Privacy-Policy")}>Privacy Policy</a>
               </td>
               <td>
-                <a href="Others/CONTRIBUTING">Contributing</a>
+                <a href={joinSegments(baseDir, "Others/CONTRIBUTING")}>Contributing</a>
               </td>
               <td>
-                <a href="Others/History">History</a>
+                <a href={joinSegments(baseDir, "Others/History")}>History</a>
               </td>
             </tr>
           </tbody>
