@@ -11,19 +11,25 @@ export default ((_opts?: unknown) => {
           All rights reserved.
         </p>
         <br/>
-        <ul>
-          <li>
-            <a href="Others/Terms-of-Service">Terms of Service</a>
-          </li>
-          <li>
-            <a href="Others/Privacy-Policy">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="Others/CONTRIBUTING">Contributing</a>
-          </li>
-        </ul>
+        <table class="footer-links">
+          <tbody>
+            <tr>
+              <td>
+                <a href="Others/Terms-of-Service">Terms of Service</a>
+              </td>
+              <td>
+                <a href="Others/Privacy-Policy">Privacy Policy</a>
+              </td>
+              <td>
+                <a href="Others/CONTRIBUTING">Contributing</a>
+              </td>
+              <td>
+                <a href="Others/History">History</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <img src="/images/banner-n.png" alt="" class="footer-banner" />
-        <br/>
         <blockquote>
           <strong>
             ALL CONTENT CREATED BY JUYOUNG PARK IN THIS WEBSITE ARE LICENSED UNDER THE{" "}
