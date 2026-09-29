@@ -122,7 +122,6 @@ Firstly, from the question that we can know this is EXOTHERMIC because the envir
 > OR
 > Increasing the temperature will favour the exdothermic reaction, so the reverse reaction is favoured
 
-![[I’m not lolicon addict-1790296071164.webp|542]]
 
 $$
 \text{Reactant} \rightleftharpoons \text{Product} + \text{Heat (Temperature)}

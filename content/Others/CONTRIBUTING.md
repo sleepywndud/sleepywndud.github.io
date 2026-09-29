@@ -78,13 +78,3 @@ I use Obsidian to write all my notes. For LATEX, I use the `obsidian-latex-suite
 
 When uploading images along with your markdown file, you may put it in a folder, and send it as a ZIP file.
 I will unzip the files and put it on the website. Please note that the zip-files are scanned through malware-checker once before they are processed.
-
----
-
-## 4. Management
-
-You, as the author of your content(s), is responsible for the accuracy of the content(s), and you solely are reliable for any complaints, inaccuracies, and feedbacks towards your content. The creator of the website, Juyoung Park, is ONLY responsible for keeping your notes on Ni Brain Too Sht.
-
-Juyoung Park is NOT responsible for any damages, inaccuracies, formatting-errors, or any other errors on your content(s).
-
-Juyoung Park reserves the right to remove your content(s) at any given time without prior notice to the author.

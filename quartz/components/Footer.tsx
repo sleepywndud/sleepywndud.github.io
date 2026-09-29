@@ -13,10 +13,13 @@ export default ((_opts?: unknown) => {
         <br/>
         <ul>
           <li>
-            <a href="/Privacy-Policy">Privacy Policy</a>
+            <a href="Others/Terms-of-Service">Terms of Service</a>
           </li>
           <li>
-            <a href="/CONTRIBUTING">Contributing</a>
+            <a href="Others/Privacy-Policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="Others/CONTRIBUTING">Contributing</a>
           </li>
         </ul>
         <img src="/images/banner-n.png" alt="" class="footer-banner" />

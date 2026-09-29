@@ -2,14 +2,20 @@
 title: Past Papers
 ---
 
+#L2MAEL #L3CALC #SCH_CALC
+
+> [!info] *Resources provided here, are copyright of the 'New Zealand Qualifications Authority' ("NZQA").*
+
 [FORMULA SHEET](Past-Papers/Scholarship/93202-frm-2025.pdf)
 
-## Scholarship
+---
+
+## Scholarship 
 
 <details>
-<summary><b>Scholarship Calculus (93202)</b></summary>
+<summary><b>93202: Scholarship Calculus </b></summary> 
 
-| Year | Assessment Sheet | Answer Sheet |
+| Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/Scholarship/Assessment/2025.pdf) | [Answers](Past-Papers/Scholarship/Answers/2025.pdf) |
 | 2024 | [Assessment](Past-Papers/Scholarship/Assessment/2024.pdf) | [Answers](Past-Papers/Scholarship/Answers/2024.pdf) |
@@ -51,11 +57,11 @@ title: Past Papers
 ## Level 3
 
 <details>
-<summary><b>Complex Numbers (91577)</b></summary>
+<summary><b>91577: Complex Numbers </b></summary>
 
 [Collated Excellence Questions for 91577 Complex Numbers](Past-Papers/L3/Complex-Numbers/91577%20ALL%20EXCELLENCE%20QUESTIONS.pdf)
 
-| Year | Assessment Sheet | Answer Sheet |
+| Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L3/Complex-Numbers/Assessment/2025.pdf) | [Answers](Past-Papers/L3/Complex-Numbers/Answers/2025.pdf) |
 | 2024 | [Assessment](Past-Papers/L3/Complex-Numbers/Assessment/2024.pdf) | [Answers](Past-Papers/L3/Complex-Numbers/Answers/2024.pdf) |
@@ -74,9 +80,9 @@ title: Past Papers
 </details>
 
 <details>
-<summary><b>Differentiation (91578)</b></summary>
+<summary><b>91578: Differentiation </b></summary>
 
-| Year | Assessment Sheet | Answer Sheet |
+| Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L3/Differentiation/Assessment/2025.pdf) | [Answers](Past-Papers/L3/Differentiation/Answers/2025.pdf) |
 | 2024 | [Assessment](Past-Papers/L3/Differentiation/Assessment/2024.pdf) | [Answers](Past-Papers/L3/Differentiation/Answers/2024.pdf) |
@@ -95,9 +101,9 @@ title: Past Papers
 </details>
 
 <details>
-<summary><b>Integration (91579)</b></summary>
+<summary><b>91579: Integration </b></summary>
 
-| Year | Assessment Sheet | Answer Sheet |
+| Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L3/Integration/Assessment/2025.pdf) | [Answers](Past-Papers/L3/Integration/Answers/2025.pdf) |
 | 2024 | [Assessment](Past-Papers/L3/Integration/Assessment/2024.pdf) | [Answers](Past-Papers/L3/Integration/Answers/2024.pdf) |
@@ -120,11 +126,11 @@ title: Past Papers
 ## Level 2
 
 <details>
-<summary><b>Algebra (91261)</b></summary>
+<summary><b>91261 Algebra</b></summary>
 
 [Collated Excellence Questions for 91261 Algebra](Past-Papers/L2/Algebra/91261-excellence(2012~2025).pdf)
 
-| Year | Assessment Sheet | Answer Sheet |
+| Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L2/Algebra/Assessment/2025.pdf) | [Answers](Past-Papers/L2/Algebra/Answers/2025.pdf) |
 | 2024 | [Assessment](Past-Papers/L2/Algebra/Assessment/2024.pdf) | [Answers](Past-Papers/L2/Algebra/Answers/2024.pdf) |
@@ -144,11 +150,11 @@ title: Past Papers
 </details>
 
 <details>
-<summary><b>Calculus (91262)</b></summary>
+<summary><b>91262 Calculus</b></summary>
 
 [Collated Excellence Questions for 91262 Calculus](Past-Papers/L2/Calculus/91262-excellence(2012~2025).pdf)
 
-| Year | Assessment Sheet | Answer Sheet |
+| Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L2/Calculus/Assessment/2025.pdf) | [Answers](Past-Papers/L2/Calculus/Answers/2025.pdf) |
 | 2024 | [Assessment](Past-Papers/L2/Calculus/Assessment/2024.pdf) | [Answers](Past-Papers/L2/Calculus/Answers/2024.pdf) |
