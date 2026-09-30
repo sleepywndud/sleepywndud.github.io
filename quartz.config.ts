@@ -1,7 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-const SECONDARY_DARK = "#59f76c"
+const SECONDARY_DARK = "#131fff"
 const MAIN_FONT = "ChosunSm"
 const CODE_FONT = "BrassMono Code"
 
@@ -59,7 +59,8 @@ const TERTIARY_LIGHT = hslToHex(lightH, lightS, Math.min(lightL + 20, 90))
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🫵🧠2️⃣💩",
+    // pageTitle: "🫵🧠2️⃣💩",
+    pageTitle: "NBTS",
     // pageTitle: "NBTS ・▾・",
     // pageTitle: ">⩊<.ᐟ",
     // pageTitle: "˖ ݁♬⋆.˚𝄞",
