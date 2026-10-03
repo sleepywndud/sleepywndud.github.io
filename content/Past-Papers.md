@@ -172,3 +172,18 @@ title: Past Papers
 | 2012 | [Assessment](Past-Papers/L2/Calculus/Assessment/2012.pdf) | [Answers](Past-Papers/L2/Calculus/Answers/2012.pdf) |
 
 </details>
+
+---
+
+## Level 1
+
+<details>
+<summary><b>91947: Mathematical Reasoning </b></summary>
+
+| Year | Examination | Schedule |
+| :--- | :--- | :--- |
+| 2025 | [Assessment](Past-Papers/L1/Mathematical-Reasoning/Assessment/2025.pdf) | [Answers](Past-Papers/L1/Mathematical-Reasoning/Answers/2025.pdf) |
+| 2024 | [Assessment](Past-Papers/L1/Mathematical-Reasoning/Assessment/2024.pdf) | [Answers](Past-Papers/L1/Mathematical-Reasoning/Answers/2024.pdf) |
+| 2023 (Pilot) | [Assessment](Past-Papers/L1/Mathematical-Reasoning/Assessment/2023.pdf) | [Answers](Past-Papers/L1/Mathematical-Reasoning/Answers/2023.pdf) |
+
+</details>
