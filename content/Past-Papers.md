@@ -57,7 +57,7 @@ title: Past Papers
 ## Level 3
 
 <details>
-<summary><b>91577: Complex Numbers </b></summary>
+<summary><b>91577: <span style="opacity: 80%">Comp</span>lex Numbers</b></summary>
 
 [Collated Excellence Questions for 91577 Complex Numbers](Past-Papers/L3/Complex-Numbers/91577%20ALL%20EXCELLENCE%20QUESTIONS.pdf)
 
@@ -80,7 +80,7 @@ title: Past Papers
 </details>
 
 <details>
-<summary><b>91578: Differentiation </b></summary>
+<summary><b>91578: <span style="opacity: 80%">Diff</span>erentiation</b></summary>
 
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
@@ -101,7 +101,7 @@ title: Past Papers
 </details>
 
 <details>
-<summary><b>91579: Integration </b></summary>
+<summary><b>91579: <span style="opacity: 80%">Inte</span>gration</b></summary>
 
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
@@ -119,6 +119,10 @@ title: Past Papers
 | 2014 | [Assessment](Past-Papers/L3/Integration/Assessment/2014.pdf) | [Answers](Past-Papers/L3/Integration/Answers/2014.pdf) |
 | 2013 | [Assessment](Past-Papers/L3/Integration/Assessment/2013.pdf) | [Answers](Past-Papers/L3/Integration/Answers/2013.pdf) |
 
+</details>
+<details>
+<summary style="opacity: 0%">NZAMT</summary>
+<span style="opacity: 20%">+ <code>/L3/NZAMT/NZAMT-{ }.pdf</code></span>
 </details>
 
 ---
