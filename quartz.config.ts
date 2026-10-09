@@ -1,7 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-const SECONDARY_DARK = "#5865f2"
+const SECONDARY_DARK = "#ffc800"
 const MAIN_FONT = "ChosunSm"
 const CODE_FONT = "BrassMono Code"
 
