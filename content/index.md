@@ -4,15 +4,19 @@ title: Welcome!
 
 <img src="/images/banner-n.png" alt="" class="footer-banner" />
 
-> [!tip] <u>You can now upload YOUR OWN resources to Ni Brain Too Sht!</u>
-> For more information, please check [CONTRIBUTING](CONTRIBUTING.md)!
+> [!info] <u>T4W1 News: Check out my new Project: Arki!</u>
+> Try out my Graphing Calcultor at <a href="https://wndx2.github.io/arki" target="_blank">Arki</a>! <br>
+> (this graphing calculator does more than Desmos)
 
 Welcome to Ni Brain Too Sht!\
 <i style="opacity: 30%">Ni Brain Too Sht means that your brain is too sht /j</i>
 
 Ni Brain Too Sht is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, and/or my friends for NCEA Mathematics and Calculus. Being created in March 2026, Ni Brain Too Sht aims to be a reliable resource archive for NCEA mathematics and calculus students.
 
-<div style="text-align: center"><img src="/images/so-simple.webp" alt="" width="250"/></div>
+<div style="text-align: center">
+    <img src="/images/are_you_the_next_oiler.png" alt="" width="400"/>
+    <p style="opacity: 30%">send me math memes and I'll put it here</p>
+</div>
 
 We have ALL the NZQA past papers for L2, L3 and Scholarship mathematics and calculus.\
 They can be found [here](Past-Papers.md)!

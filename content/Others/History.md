@@ -64,3 +64,6 @@
 - First contributor: Wenbo Yuan
 - Terms of service added; privacy policy and contributing guide moved into "Others"
 - Second contributor: Sedecember
+
+12th of October 2026:
+- Arki link added to the footer

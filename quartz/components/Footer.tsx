@@ -28,6 +28,9 @@ export default ((_opts?: unknown) => {
               <td>
                 <a href={joinSegments(baseDir, "Others/History")}>History</a>
               </td>
+              <td>
+                <a href="https://wndx2.github.io/arki" target="_blank" rel="noopener noreferrer">Arki</a>
+              </td>
             </tr>
           </tbody>
         </table>
