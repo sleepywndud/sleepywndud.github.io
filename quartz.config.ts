@@ -1,7 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-const SECONDARY_DARK = "#72adec"
+const SECONDARY_DARK = "#75ebd4"
 const MAIN_FONT = "ChosunSm"
 const CODE_FONT = "BrassMono Code"
 
@@ -65,7 +65,7 @@ const config: QuartzConfig = {
     // pageTitle: ">⩊<.ᐟ",
     // pageTitle: "˖ ݁♬⋆.˚𝄞",
     // pageTitle: "\\(^o^)/",
-    pageTitleSuffix: " ㅣ ℕi Brain Too Sht",
+    pageTitleSuffix: " | ℕi Brain Too Sht",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
