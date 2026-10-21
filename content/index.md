@@ -14,7 +14,7 @@ Welcome to Ni Brain Too Sht!\
 Ni Brain Too Sht is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, and/or my friends for NCEA Mathematics and Calculus. Being created in March 2026, Ni Brain Too Sht aims to be a reliable resource archive for NCEA mathematics and calculus students.
 
 <div style="text-align: center">
-    <img src="/images/are_you_the_next_oiler.png" alt="" width="400"/>
+    <img src="hello.png" alt="" width="400"/>
     <p style="opacity: 30%">send me math memes and I'll put it here</p>
 </div>
 
