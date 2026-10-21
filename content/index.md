@@ -4,10 +4,6 @@ title: Welcome!
 
 <img src="/images/banner-n.png" alt="" class="footer-banner" />
 
-> [!info] <u>T4W1 News: Check out my new Project: Arki!</u>
-> Try out my Graphing Calcultor at <a href="https://wndx2.github.io/arki" target="_blank">Arki</a>! <br>
-> (this graphing calculator does more than Desmos)
-
 Welcome to Ni Brain Too Sht!\
 <i style="opacity: 30%">Ni Brain Too Sht means that your brain is too sht /j</i>
 
