@@ -1,5 +1,5 @@
 ---
-title: Past Papers
+title: Past Papers - Physics
 ---
 
 #L2PHYS #L3PHYS
