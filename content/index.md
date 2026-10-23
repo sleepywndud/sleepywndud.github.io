@@ -26,5 +26,5 @@ We do also have ALL the NZQA past papers for L2 and L3 Chemsitry and Physics. Th
 
 ---
 
-> *This page may contain mistakes. \
+> *This page may contain mistakes.\
 > If you spot one, please email `juyoung.parkk8@gmail.com`!*

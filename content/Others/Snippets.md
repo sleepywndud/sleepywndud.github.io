@@ -301,7 +301,13 @@ export default [
 {trigger: "pox", replacement: "'(x)", options: "mA" },
 {trigger: "qed", replacement: " \\ {∎} $0", options: "mA"},
 {trigger: "3synthdiv", replacement: "\\begin{array}{r|rrrr}\n   & 0 & 0 & 0 & 0 \\\\\n0  & ↓ & 0  & 0 & 0  \\\\\n\\hline\n  & 0 & 0 & 0  & \\boxed{0}\n\\end{array}", options: "mA" },
-
+{trigger: "jung", replacement: "\\boxed{正}$0", options: "mA"},
+{trigger: "altsol", replacement: "\\boxed{\\text{AS}}$0", options: "mA"},
+{trigger: "up", replacement: "\\uparrow$0", options: "mA"},
+{trigger: "down", replacement: "\\downarrow$0", options: "mA"},
+{trigger: "eqlb", replacement: "\\rightleftharpoons$0", options: "mA"},
+// {trigger: "", replacement: "", options: "mA"},
+// {trigger: "", replacement: "", options: "mA"},
 
 {trigger: /iden(\d)/, replacement: (match) => {
 	const n = match[1];
