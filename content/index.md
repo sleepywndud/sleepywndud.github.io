@@ -5,17 +5,18 @@ title: Welcome!
 <img src="/images/banner-n.png" alt="" class="footer-banner" />
 
 > [!info] NEW UPDATES
-> ALL the NZQA past papers for Chemistry and Physics (L2 & L3) were added!\
-> Check them out [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md)!
+> 1. ALL the NZQA past papers for Chemistry and Physics (L2 & L3) were added!\
+> Check them out [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md).
+> 2. Emojis were added -- `:excellence:` will render like this -> :excellence:!
+> Check out [CONTRIBUTING](Others/CONTRIBUTING.md) for more information.
 
 Welcome to Ni Brain Too Sht!\
 <i style="opacity: 30%">Ni Brain Too Sht means that your brain is too sht /j</i>
 
-Ni Brain Too Sht is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, and/or my friends for NCEA Mathematics and Calculus. Being created in March 2026, Ni Brain Too Sht aims to be a reliable resource archive for NCEA mathematics and calculus students.
+Ni Brain Too Sht is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, and/or my friends for NCEA Mathematics and Calculus!
 
 <div style="text-align: center">
-    <img src="hello.png" alt="" width="400"/>
-    <p style="opacity: 30%; margin-top: -0.7rem; margin-bottom: 0.7rem">send me math memes and I'll put it here</p>
+    <img src="hello.png" alt="hahasofunny" width="300"/>
 </div>
 
 We have ALL the NZQA past papers for L2, L3, and Scholarship mathematics and calculus.\
@@ -25,4 +26,5 @@ We do also have ALL the NZQA past papers for L2 and L3 Chemsitry and Physics. Th
 
 ---
 
-> *This page may contain mistakes. If you spot one, feel free to shoot me an email to: `22222w@duck.com`, or feel free to fix it yourself.*
+> *This page may contain mistakes. \
+> If you spot one, please email `juyoung.parkk8@gmail.com`!*

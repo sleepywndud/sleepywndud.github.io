@@ -18,8 +18,8 @@ The approved subjects (as of 28.09.2026) are:
 
 You may not submit any content that:
 - Doesn't fit the website's overall purpose
-- NCEA English notes (yes, I don't, and never intend posting English notes)
-- it NOT a `.md`/`.zip`(if it has images) file
+- Are NCEA English notes (yes, I don't, and never intend posting English notes)
+- Is NOT a `.md`/`.zip`(if note contains images) file
 
 ---
 
@@ -27,7 +27,7 @@ You may not submit any content that:
 
 I care about internal consistency, so please take a moment to read the formatting guidelines:
 
-### 2-1: <u>LATEX</u>
+### 2-1: LATEX
 For **block-LATEX** (LATEX that renders in the center of the page), you MUST separate lines between the '$$' and your LATEX content.
 > [!failure] INCORRECT
 > ```
@@ -45,10 +45,10 @@ For **block-LATEX** (LATEX that renders in the center of the page), you MUST sep
 
 The preferred program to write the notes is Obsidian, since it utilizes the markdown files (which we use on our website).
 
-### 2-2: <u>Grammar</u>
+### 2-2: Grammar
 Minor grammar mistakes are alright, but please make sure that you run your file through Grammarly at least once. It keeps the notes more accurate.
 
-### 2-3: <u>Header</u>
+### 2-3: Header
 ALL our notes have a tag at the top of the page, whether it's `#L3CALC`, `#L2PHYS`, or anything.\
 Please make sure to have at least ONE tag, indicating the subject, so that I can identify which subject folder the note goes into.
 
@@ -78,3 +78,34 @@ I use Obsidian to write all my notes. For LATEX, I use the `obsidian-latex-suite
 
 When uploading images along with your markdown file, you may put it in a folder, and send it as a ZIP file.
 I will unzip the files and put it on the website. Please note that the zip-files are scanned through malware-checker once before they are processed.
+
+---
+
+## 4. Custom Elements in Ni Brain Too Sht
+
+This website has some custom elements enabled. 
+
+### 4-1: Emojis
+These are the current set of custom emojis that can be used:
+`:notachieved:` -> :notachieved:\
+`:N1:` -> :N1:\
+`:N2:` -> :N2:\
+`:achieved:` -> :achieved:\
+`:A3:` -> :A3:\
+`:A4:` -> :A4:\
+`:merit:` -> :merit:\
+`:M5:` -> :M5:\
+`:M6:` -> :M6:\
+`:excellence:` -> :excellence:\
+`:E7:` -> :E7:\
+`:E8:` -> :E8:
+
+### 4-2: Callouts
+These are the current set of callouts that can be used:
+> [!notachieved] Use this by typing `> [!notachieved]`.
+
+> [!achieved] Use this by typing `> [!achieved]`.
+
+> [!merit] Use this by typing `> [!merit]`.
+
+> [!excellence] Use this by typing `> [!excellence]`.

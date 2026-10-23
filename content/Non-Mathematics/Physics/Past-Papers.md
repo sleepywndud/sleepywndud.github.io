@@ -8,6 +8,9 @@ title: Past Papers - Physics
 
 <div class="exam-countdown-slot"></div>
 
+[FORMULA SHEET (L2)](L2PHYSRES.pdf)\
+[FORMULA SHEET (L3)](L3PHYSRES.pdf)
+
 ---
 
 ## Level 3

@@ -8,6 +8,9 @@ title: Past Papers - Chemistry
 
 <div class="exam-countdown-slot"></div>
 
+[FORMULA SHEET (L2)](L2CHEMRES.pdf)\
+[FORMULA SHEET (L3)](L3CHEMRES.pdf)
+
 ---
 
 ## Level 3
