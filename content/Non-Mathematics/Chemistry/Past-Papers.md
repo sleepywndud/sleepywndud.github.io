@@ -6,6 +6,8 @@ title: Past Papers - Chemistry
 
 > [!info] *Resources provided here, are copyright of the 'New Zealand Qualifications Authority' ("NZQA").*
 
+<div class="exam-countdown-slot"></div>
+
 ---
 
 ## Level 3

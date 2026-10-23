@@ -6,6 +6,8 @@ title: Past Papers
 
 > [!info] *Resources provided here, are copyright of the 'New Zealand Qualifications Authority' ("NZQA").*
 
+<div class="exam-countdown-slot"></div>
+
 [FORMULA SHEET](Past-Papers/Scholarship/93202-frm-2025.pdf)
 
 ---

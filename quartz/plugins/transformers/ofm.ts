@@ -88,6 +88,12 @@ const calloutMapping = {
   example: "example",
   quote: "quote",
   cite: "quote",
+  // NCEA grades
+  "not-achieved": "not-achieved",
+  notachieved: "not-achieved",
+  achieved: "achieved",
+  merit: "merit",
+  excellence: "excellence",
 } as const
 
 const arrowMapping: Record<string, string> = {

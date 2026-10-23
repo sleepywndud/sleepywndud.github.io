@@ -1,0 +1,80 @@
+@media print {
+  @page {
+    margin: 1.5cm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+  }
+
+  // Only the note: no sidebars, search, graph, footer, breadcrumbs or tags.
+  .left.sidebar,
+  .right.sidebar,
+  footer,
+  .page-footer,
+  .center > hr,
+  .breadcrumb-container,
+  .page-header .tags,
+  .exam-countdown,
+  .popover {
+    display: none !important;
+  }
+
+  #quartz-root,
+  #quartz-body,
+  .center {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  // Past-paper tables: drop the tracker's checkbox column and progress badges.
+  .paper-table th:last-child,
+  .paper-table td:last-child,
+  .paper-progress {
+    display: none !important;
+  }
+
+  .paper-table tr.paper-done td {
+    opacity: 1 !important;
+    text-decoration: none !important;
+  }
+
+  // Links print as normal text.
+  a,
+  a.internal {
+    color: inherit !important;
+    background: none !important;
+    text-decoration: none !important;
+    padding: 0 !important;
+  }
+
+  // Don't split these across pages.
+  .callout,
+  table,
+  pre,
+  figure,
+  img,
+  .katex-display {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .callout-title {
+    break-after: avoid;
+  }
+
+  // Keep callout and code backgrounds so they still look like boxes on paper.
+  .callout,
+  pre,
+  code {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

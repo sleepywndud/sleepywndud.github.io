@@ -1,5 +1,7 @@
 import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
+// Chemistry notation: \ce{...} and \pu{...}
+import "katex/contrib/mhchem"
 import rehypeMathjax from "rehype-mathjax/svg"
 //@ts-ignore
 import rehypeTypst from "@myriaddreamin/rehype-typst"

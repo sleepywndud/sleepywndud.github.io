@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "sass:list";
 
 // put your custom CSS here!
 
@@ -112,4 +113,54 @@
   font-weight: normal;
   font-display: swap;
   src: url("static/fonts/ChosunSm.TTF") format("truetype");
+}
+
+// NCEA grade callouts: > [!not-achieved], > [!achieved], > [!merit], > [!excellence]
+// Colours match the icons in static/grades/.
+$grades: (
+  "not-achieved": (#b22222, "notachieved"),
+  "achieved": (#008800, "achieved"),
+  "merit": (#1d90ff, "merit"),
+  "excellence": (#ffd800, "excellence"),
+);
+
+@each $name, $grade in $grades {
+  $color: list.nth($grade, 1);
+  .callout[data-callout="#{$name}"] {
+    --color: #{$color};
+    --border: #{$color}66;
+    --bg: #{$color}14;
+    --callout-icon: url("static/grades/#{list.nth($grade, 2)}.png");
+
+    // Show the icon in its own colours instead of tinting it.
+    .callout-title .callout-icon {
+      background-color: transparent;
+      background-image: var(--callout-icon);
+      background-repeat: no-repeat;
+      mask-image: none;
+      --icon-size: 20px;
+    }
+  }
+}
+
+// Yellow is hard to read on white, so darken Excellence titles in light mode only.
+:root[saved-theme="light"] .callout[data-callout="excellence"] .callout-title,
+:root[saved-theme="light"] .callout[data-callout="excellence"] .callout-title-inner > p {
+  color: #9a7b00;
+}
+
+// Inline grade icons from :merit:, :e8:, etc. (see plugins/transformers/gradeEmoji.ts)
+img.grade-emoji {
+  display: inline-block;
+  height: 1.25em;
+  width: auto;
+  margin: 0 0.05em;
+  vertical-align: -0.25em;
+  border-radius: 0;
+
+  // :n1: to :e8:, a bit bigger than the grade icons
+  &.grade-score {
+    height: 1.5em;
+    vertical-align: -0.38em;
+  }
 }

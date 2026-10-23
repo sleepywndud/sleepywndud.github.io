@@ -1,7 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-const SECONDARY_DARK = "#c3f813"
+const SECONDARY_DARK = "#0048ff"
 const MAIN_FONT = "ChosunSm"
 const CODE_FONT = "BrassMono Code"
 
@@ -73,7 +73,7 @@ const config: QuartzConfig = {
       websiteId: "0a44a84e-faa9-4f02-a1c7-23bfc588c4d8",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "sleepywndud.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -135,6 +135,7 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
+      Plugin.GradeEmoji(),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),

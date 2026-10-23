@@ -67,3 +67,8 @@
 
 12th of October 2026:
 - Arki link added to the footer
+
+23rd of October 2026:
+- Chemistry & Physics past papers added
+- Added past paper tracker
+- Added new custom callouts

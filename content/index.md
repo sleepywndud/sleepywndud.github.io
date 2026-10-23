@@ -4,6 +4,10 @@ title: Welcome!
 
 <img src="/images/banner-n.png" alt="" class="footer-banner" />
 
+> [!info] NEW UPDATES
+> ALL the NZQA past papers for Chemistry and Physics (L2 & L3) were added!\
+> Check them out [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md)!
+
 Welcome to Ni Brain Too Sht!\
 <i style="opacity: 30%">Ni Brain Too Sht means that your brain is too sht /j</i>
 
@@ -11,13 +15,13 @@ Ni Brain Too Sht is an archive of all the notes, questions, and tutorials I made
 
 <div style="text-align: center">
     <img src="hello.png" alt="" width="400"/>
-    <p style="opacity: 30%">send me math memes and I'll put it here</p>
+    <p style="opacity: 30%; margin-top: -0.7rem; margin-bottom: 0.7rem">send me math memes and I'll put it here</p>
 </div>
 
-We have ALL the NZQA past papers for L2, L3 and Scholarship mathematics and calculus.\
+We have ALL the NZQA past papers for L2, L3, and Scholarship mathematics and calculus.\
 They can be found [here](Past-Papers.md)!
 
-We also have *some* resources for [Chemistry](Non-mathematics/Chemistry/) and [Physics](Non-mathematics/Physics/); however our main focus is mathematics and calculus.
+We do also have ALL the NZQA past papers for L2 and L3 Chemsitry and Physics. They can be found [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md)
 
 ---
 

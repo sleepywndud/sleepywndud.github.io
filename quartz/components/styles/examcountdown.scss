@@ -1,0 +1,56 @@
+.exam-countdown {
+  display: none;
+
+  &.has-exams {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+.exam-countdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--lightgray);
+  border-left: 3px solid var(--secondary);
+  border-radius: 5px;
+  background-color: var(--highlight);
+}
+
+.exam-countdown-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+  padding: 0.25rem 0;
+  margin: 0;
+
+  &[hidden] {
+    display: none;
+  }
+
+  .exam-countdown-name {
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  .exam-countdown-date {
+    color: var(--gray);
+    font-size: 0.9em;
+  }
+
+  .exam-countdown-left {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--secondary);
+    white-space: nowrap;
+  }
+
+  &[data-urgency="near"] .exam-countdown-left {
+    color: #db8942;
+  }
+
+  &[data-urgency="soon"] .exam-countdown-left {
+    color: #db4242;
+  }
+}
