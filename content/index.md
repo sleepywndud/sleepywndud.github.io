@@ -4,10 +4,10 @@ title: Welcome!
 
 <img src="/images/banner-n.png" alt="" class="footer-banner" />
 
-> [!info] NEW UPDATES
+> [!info] !!! NEW UPDATES !!!
 > 1. ALL the NZQA past papers for Chemistry and Physics (L2 & L3) were added!\
 > Check them out [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md).
-> 2. Emojis were added -- `:excellence:` will render like this -> :excellence:!
+> 2. Emojis were added -- `:excellence:` will render like this -> :excellence:!\
 > Check out [CONTRIBUTING](Others/CONTRIBUTING.md) for more information.
 
 Welcome to Ni Brain Too Sht!\
