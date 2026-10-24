@@ -26,6 +26,9 @@ import ConditionalRender from "./ConditionalRender"
 import PaperTracker from "./PaperTracker"
 import ExamCountdown from "./ExamCountdown"
 import PrintMode from "./PrintMode"
+import Screensaver from "./Screensaver"
+import WbtsSplit from "./WbtsSplit"
+import PdfViewer from "./PdfViewer"
 
 export {
   ArticleTitle,
@@ -56,4 +59,7 @@ export {
   PaperTracker,
   ExamCountdown,
   PrintMode,
+  Screensaver,
+  WbtsSplit,
+  PdfViewer,
 }

@@ -1,0 +1,187 @@
+@use "../../styles/variables.scss" as *;
+
+.wbts-toggle {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: none;
+  width: 20px;
+  height: 32px;
+  margin: 0;
+  flex-shrink: 0;
+  color: var(--darkgray);
+
+  & svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    left: 0;
+  }
+
+  &[aria-pressed="true"] {
+    color: var(--secondary);
+  }
+}
+
+// The pad sits on the right (or the bottom on phones). Hidden, not removed,
+// so drawings survive closing it.
+#wbts-pane {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--wbts-size, 50vw);
+  z-index: 50;
+  background: var(--light);
+  border-left: 1px solid var(--lightgray);
+  visibility: hidden;
+  transform: translateX(100%);
+  transition:
+    transform 0.25s ease,
+    visibility 0.25s;
+
+  @media all and ($mobile) {
+    top: auto;
+    left: 0;
+    width: auto;
+    height: var(--wbts-size, 50vh);
+    border-left: none;
+    border-top: 1px solid var(--lightgray);
+    transform: translateY(100%);
+  }
+
+  & iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.wbts-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  width: 10px;
+  cursor: col-resize;
+  touch-action: none;
+  z-index: 1;
+
+  &:hover,
+  :root.wbts-dragging & {
+    background: linear-gradient(var(--secondary), var(--secondary)) center / 2px 100% no-repeat;
+  }
+
+  @media all and ($mobile) {
+    top: -5px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 10px;
+    cursor: row-resize;
+
+    &:hover,
+    :root.wbts-dragging & {
+      background: linear-gradient(var(--secondary), var(--secondary)) center / 100% 2px no-repeat;
+    }
+  }
+}
+
+.wbts-close {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 50%;
+  background: var(--light);
+  color: var(--darkgray);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+// While dragging, the iframe would swallow pointer moves.
+:root.wbts-dragging {
+  user-select: none;
+  & #wbts-pane iframe {
+    pointer-events: none;
+  }
+  & #wbts-pane,
+  & body {
+    transition: none;
+  }
+}
+
+:root.wbts-split {
+  & #wbts-pane {
+    visibility: visible;
+    transform: none;
+  }
+
+  & body {
+    margin-right: var(--wbts-size, 50vw);
+    @media all and ($mobile) {
+      margin-right: 0;
+      padding-bottom: var(--wbts-size, 50vh);
+    }
+  }
+
+  // Notes side is narrower than the screen, so use the two-column layout:
+  // left sidebar + note, with the right sidebar moved under the note.
+  @media all and ($tablet), all and ($desktop) {
+    & .page > #quartz-body {
+      grid-template-columns: 280px minmax(0, 1fr);
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "grid-sidebar-left grid-header"
+        "grid-sidebar-left grid-center"
+        "grid-sidebar-left grid-sidebar-right"
+        "grid-sidebar-left grid-footer";
+      padding: 0 1.5rem 0 0;
+
+      & .sidebar.left {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+
+      & .sidebar.right {
+        position: initial;
+        height: unset;
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+        & > * {
+          flex: 1;
+          max-height: 24rem;
+        }
+        & > .toc {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Very narrow notes side: just the note.
+  &.wbts-narrow .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+    padding: 0 1.5rem;
+
+    & .sidebar.left {
+      display: none;
+    }
+  }
+}

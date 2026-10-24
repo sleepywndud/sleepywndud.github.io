@@ -1,0 +1,273 @@
+.screensaver-toggle {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: none;
+  width: 20px;
+  height: 32px;
+  margin: 0;
+  flex-shrink: 0;
+  color: var(--darkgray);
+
+  & svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    left: 0;
+  }
+}
+
+:root.screensaver-open {
+  overflow: hidden;
+}
+
+.screensaver {
+  --hour: #ff9a8b;
+  --minute: #ffc4b8;
+  --colon: #e0604f;
+  --rounded: "SF Pro Rounded", ui-rounded, "SN Pro", system-ui, sans-serif;
+
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: #000;
+  user-select: none;
+  -webkit-user-select: none;
+
+  // fade in on open, out on close (see screensaver.inline.ts)
+  opacity: 0;
+  transition: opacity 0.6s ease;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  &.closing {
+    pointer-events: none;
+  }
+
+  &.idle {
+    cursor: none;
+  }
+
+  .ss-clock {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // slow drift to avoid burn-in
+    transition: transform 30s ease-in-out;
+  }
+
+  .ss-face {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ss-date {
+    align-self: flex-end;
+    font-family: var(--rounded);
+    font-weight: 900;
+    font-size: min(1.1vw, 2.2vh);
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0.4em;
+  }
+
+  .ss-time {
+    display: flex;
+    align-items: center;
+    font-family: var(--rounded);
+    font-weight: 900;
+    font-size: min(15vw, 30vh);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ss-digit {
+    display: inline-flex;
+    justify-content: center;
+    width: 0.56em;
+    margin: 0 -0.06em;
+    mix-blend-mode: screen;
+    animation: ss-float var(--d, 7s) ease-in-out var(--delay, 0s) infinite;
+    transition: color 1.5s ease;
+    will-change: transform;
+
+    &:nth-child(1) {
+      --d: 7.2s;
+      --delay: -1.1s;
+    }
+    &:nth-child(2) {
+      --d: 8.4s;
+      --delay: -3.7s;
+    }
+    &:nth-child(4) {
+      --d: 6.6s;
+      --delay: -2.3s;
+    }
+    &:nth-child(5) {
+      --d: 7.8s;
+      --delay: -5.2s;
+    }
+
+    // digit change: soft pop
+    &.tick {
+      animation:
+        ss-float var(--d, 7s) ease-in-out var(--delay, 0s) infinite,
+        ss-pop 0.6s ease-out;
+    }
+  }
+
+  .ss-hour {
+    color: var(--hour);
+  }
+
+  .ss-minute {
+    color: var(--minute);
+  }
+
+  .ss-colon {
+    display: inline-flex;
+    justify-content: center;
+    width: 0.28em;
+    margin: 0 -0.02em;
+    padding-bottom: 0.08em;
+    color: var(--colon);
+    mix-blend-mode: screen;
+    transition: color 1.5s ease;
+    animation: ss-float 7.5s ease-in-out -4s infinite;
+  }
+
+  // auto mode: slow crossfade between palettes
+  &.auto .ss-digit,
+  &.auto .ss-colon {
+    transition: color 7s ease-in-out;
+  }
+
+  .ss-swatches {
+    position: fixed;
+    bottom: 44px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 16px;
+  }
+
+  .ss-swatch {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    cursor: pointer;
+    outline: none;
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    &.active {
+      border-color: rgba(255, 255, 255, 0.85);
+    }
+
+    &.auto {
+      background: conic-gradient(
+        #ff9a8b,
+        #ffb86b,
+        #ffe46b,
+        #9ee6a8,
+        #7cc7ff,
+        #9ea9e6,
+        #b79bff,
+        #ff8fc7,
+        #ff9a8b
+      );
+    }
+  }
+
+  .ss-close {
+    position: fixed;
+    top: 14px;
+    right: 18px;
+    background: none;
+    border: none;
+    padding: 4px 8px;
+    font-size: 28px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .ss-hint {
+    position: fixed;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    white-space: nowrap;
+    font-family: var(--bodyFont);
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .ss-swatches,
+  .ss-close,
+  .ss-hint {
+    transition: opacity 1.5s ease;
+  }
+
+  &.idle .ss-swatches,
+  &.idle .ss-close,
+  &.idle .ss-hint {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes ss-float {
+  0%,
+  100% {
+    transform: translateY(-1%) rotate(-0.4deg);
+  }
+  50% {
+    transform: translateY(1%) rotate(0.4deg);
+  }
+}
+
+@keyframes ss-pop {
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .screensaver .ss-digit,
+  .screensaver .ss-colon {
+    animation: none !important;
+  }
+
+  .screensaver {
+    transition-duration: 0.2s;
+  }
+}

@@ -101,6 +101,13 @@ async function _navigate(url: URL, isBack: boolean = false) {
   announcer.dataset.persist = ""
   html.body.appendChild(announcer)
 
+  // keep panes that live at the start of <body> (e.g. the WBTS split pane):
+  // put an identical copy in the same spot so the morph leaves the original alone
+  const panes = [...document.body.children].filter((el) => el.hasAttribute("data-persist-pane"))
+  for (const el of panes.reverse()) {
+    html.body.prepend(el.cloneNode(true))
+  }
+
   // morph body
   await micromorph(document.body, html.body)
 
