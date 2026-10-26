@@ -615,10 +615,15 @@ ol.overflow {
   }
 }
 
+// Must be block: overflow does nothing on inline elements, so wide equations
+// would push the page sideways on phones instead of scrolling.
 .katex-display {
-  display: initial;
+  display: block;
+  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+  // room so tall fractions and the scrollbar don't get clipped
+  padding: 0.25em 0;
 }
 
 .external-embed.youtube,

@@ -24,7 +24,5 @@ They can be found [here](Past-Papers.md)!
 
 We do also have ALL the NZQA past papers for L2 and L3 Chemsitry and Physics. They can be found [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md)
 
----
-
-> *This page may contain mistakes.\
-> If you spot one, please email `juyoung.parkk8@gmail.com`!*
+> [!question] Want to choose the *next theme color* for the website?
+> DM me on Discord/Instagram at `@sleepywndud`, or email `juyoung.parkk8@gmail.com`!

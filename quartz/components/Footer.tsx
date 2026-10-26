@@ -45,7 +45,7 @@ export default ((_opts?: unknown) => {
           </strong>
         </blockquote>
         <p>
-          Any inquiries, please email <code>juyoung.parkk8@gmail.com</code>, or send me a DM on Discord <code>sleepywndud</code>.
+          Any inquiries, please email <code>juyoung.parkk8@gmail.com</code>, or send me a DM on Discord/Instagram at <code>@sleepywndud</code>.
         </p>
       </footer>
     )
