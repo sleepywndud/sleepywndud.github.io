@@ -16,7 +16,7 @@ Welcome to Ni Brain Too Sht!\
 Ni Brain Too Sht is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, and/or my friends for NCEA Mathematics and Calculus!
 
 <div style="text-align: center">
-    <img src="hello.png" alt="hahasofunny" width="300"/>
+    <img src="ohno.png" alt="hahasofunny" width="300"/>
 </div>
 
 We have ALL the NZQA past papers for L2, L3, and Scholarship mathematics and calculus.\
