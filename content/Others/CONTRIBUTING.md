@@ -83,7 +83,7 @@ I will unzip the files and put it on the website. Please note that the zip-files
 
 ## 4. Custom Elements in Ni Brain Too Sht
 
-This website has some custom elements enabled. 
+This website has some custom elements enabled. It won't render in your markdown editor, but it will correctly render in our website.
 
 ### 4-1: Emojis
 These are the current set of custom emojis that can be used:

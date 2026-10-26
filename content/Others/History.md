@@ -73,3 +73,7 @@
 - Added past paper tracker
 - Added new custom callouts
 - Added new custom emojis
+
+26th of October 2026:
+- Added a new 404 page
+
