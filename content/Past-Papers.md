@@ -61,7 +61,7 @@ title: Past Papers
 <details>
 <summary><b>91577: <span style="opacity: 80%">Comp</span>lex Numbers</b></summary>
 
-[Collated Excellence Questions for 91577 Complex Numbers](Past-Papers/L3/Complex-Numbers/91577%20ALL%20EXCELLENCE%20QUESTIONS.pdf)
+[Collated Excellence Questions for 91577 Complex Numbers](Past-Papers/L3/Complex-Numbers/91577-excellence(2013~2025).pdf)
 
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
@@ -84,6 +84,8 @@ title: Past Papers
 <details>
 <summary><b>91578: <span style="opacity: 80%">Diff</span>erentiation</b></summary>
 
+[Collated Excellence Questions for 91578 Differentiation](Past-Papers/L3/Differentiation/91578-excellence(2013~2025).pdf)
+
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L3/Differentiation/Assessment/2025.pdf) | [Answers](Past-Papers/L3/Differentiation/Answers/2025.pdf) |
@@ -104,6 +106,8 @@ title: Past Papers
 
 <details>
 <summary><b>91579: <span style="opacity: 80%">Inte</span>gration</b></summary>
+
+[Collated Excellence Questions for 91579 Integration](Past-Papers/L3/Integration/91579-excellence(2013~2025).pdf)
 
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
