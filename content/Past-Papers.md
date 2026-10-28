@@ -140,6 +140,8 @@ title: Past Papers
 
 [Collated Excellence Questions for 91261 Algebra](Past-Papers/L2/Algebra/91261-excellence(2012~2025).pdf)
 
+[Practice Excellence Questions for 91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [Answers](Past-Papers/L2/Algebra/91261-practice-excellence-answers.pdf)
+
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L2/Algebra/Assessment/2025.pdf) | [Answers](Past-Papers/L2/Algebra/Answers/2025.pdf) |
@@ -163,6 +165,8 @@ title: Past Papers
 <summary><b>91262 Calculus</b></summary>
 
 [Collated Excellence Questions for 91262 Calculus](Past-Papers/L2/Calculus/91262-excellence(2012~2025).pdf)
+
+[Practice Excellence Questions for 91262 Calculus](Past-Papers/L2/Calculus/91262-practice-excellence.pdf) · [Answers](Past-Papers/L2/Calculus/91262-practice-excellence-answers.pdf)
 
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
