@@ -1,28 +1,48 @@
 ---
 title: Welcome!
+banner: /images/banner-n.png
 ---
 
-<img src="/images/banner-n.png" alt="" class="footer-banner" />
+%%
+HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
+- banner: (above) is the doodle strip under the top bar. Change the path to swap the image.
+- [!polaroid] is the taped photo on the right. The title after it is the handwritten caption.
+- [!sticky] is the yellow sticky note on the right. **Bold** text inside it is the date.
+- Keep the polaroid and sticky note at the TOP of this file so they sit beside the text on laptops.
+  (On phones they move below the "where to?" list automatically.)
+- A plain "> " line is a handwritten side note.
+%%
 
-> [!info] !!! NEW UPDATES !!!
-> 1. ALL the NZQA past papers for Chemistry and Physics (L2 & L3) were added!\
-> Check them out [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md).
-> 2. Emojis were added -- `:excellence:` will render like this -> :excellence:!\
-> Check out [CONTRIBUTING](Others/CONTRIBUTING.md) for more information.
+> [!polaroid] meme of the week
+> ![bobo](bobo.png)
 
-Welcome to Ni Brain Too Sht!\
-<i style="opacity: 30%">Ni Brain Too Sht means that your brain is too sht /j</i>
+> [!sticky] < new stuff >
+> **31 Oct**: NEW HOMEPAGE
+>
+> **30 Oct**: practice excellence Qs for L2 Math!
+>
+> **earlier**: all Chem + Physics papers (L2 & L3). also grade emojis like: :merit:
 
-Ni Brain Too Sht is an archive of all the notes, questions, and tutorials I made for myself, my juniors, my mentees, and/or my friends for NCEA Mathematics and Calculus!
+# Welcome to ==Ni Brain Too Sht==!
 
-<div style="text-align: center">
-    <img src="bobo.png" alt="hahasofunny" width="300"/>
-</div>
+> ↳ Ni Brain Too Sht means your brain is too sht /j
 
-We have ALL the NZQA past papers for L2, L3, and Scholarship mathematics and calculus.\
-They can be found [here](Past-Papers.md)!
+Ni Brain Too Sht is an archive of all the notes, questions and tutorials I made for myself, my juniors, my mentees and my friends for NCEA mathematics and calculus.
 
-We do also have ALL the NZQA past papers for L2 and L3 Chemsitry and Physics. They can be found [here (Chemistry)](Non-Mathematics/Chemistry/Past-Papers.md) and [here (Physics)](Non-Mathematics/Physics/Past-Papers.md)
+There's also every NZQA past paper for L2, L3, and Scholarship Calculus, plus L2 and L3 chemistry & physics.
 
-> [!question] Want to choose the *next theme color* for the website?
-> DM me on Discord/Instagram at `@sleepywndud`, or email `juyoung.parkk8@gmail.com`!
+%%
+"where to?" list: one numbered line per row.
+- **Bold** text is the row name. The links after it go on the right, after the dotted line.
+- Add ==new!== after the bold name to get the handwritten "new!" arrow.
+%%
+
+> [!where-to] where to?
+> 1. **Maths & Calculus past papers** [L2](Past-Papers.md#level-2) · [L3](Past-Papers.md#level-3) · [Scholarship](Past-Papers.md#scholarship)
+> 2. **Practice excellence questions** ==new!== [91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [91262 Calculus](Past-Papers/L2/Calculus/91262-practice-excellence.pdf)
+> 3. **Chemistry past papers** [L2](Non-Mathematics/Chemistry/Past-Papers.md#level-2) · [L3](Non-Mathematics/Chemistry/Past-Papers.md#level-3)
+> 4. **Physics past papers** [L2](Non-Mathematics/Physics/Past-Papers.md#level-2) · [L3](Non-Mathematics/Physics/Past-Papers.md#level-3)
+> 5. **Notes** [Level 2](Mathematics/Level-2/) · [Level 3](Mathematics/Level-3/) · [Scholarship](Mathematics/Scholarship/)
+> 6. **Want to help? Contributing** [read this](Others/CONTRIBUTING.md)
+
+> psst… want to pick the next theme colour? DM me **@sleepywndud** on Discord / Instagram :heart:

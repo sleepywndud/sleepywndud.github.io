@@ -1,5 +1,6 @@
 @use "./base.scss";
 @use "sass:list";
+@use "./variables.scss" as *;
 
 // put your custom CSS here!
 
@@ -162,5 +163,551 @@ img.grade-emoji {
   &.grade-score {
     height: 1.5em;
     vertical-align: -0.38em;
+  }
+}
+
+// :heart: icon (see plugins/transformers/gradeEmoji.ts). A chubby filled heart in the accent colour.
+.heart-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.14em;
+  background-color: var(--secondary);
+  transform: rotate(-10deg);
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 21.2c-.4 0-.8-.1-1.1-.4C6.6 17.6 2 14 2 9.1 2 6 4.3 3.6 7.1 3.6c2 0 3.6 1 4.9 2.8 1.3-1.8 2.9-2.8 4.9-2.8 2.8 0 5.1 2.4 5.1 5.5 0 4.9-4.6 8.5-8.9 11.7-.3.3-.7.4-1.1.4Z"/></svg>')
+    no-repeat center / contain;
+}
+
+// Handwriting font for the homepage notes (Latin-only subset of Gaegu, a Google Font).
+@font-face {
+  font-family: "Gaegu";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("static/fonts/Gaegu-Regular.woff2") format("woff2");
+}
+
+// The header slot is only filled on the homepage; hide the empty one on other pages.
+.page-header > header:empty {
+  display: none;
+}
+
+// ---------------------------------------------------------------------------
+// Homepage (content/index.md): a landing page with no sidebars.
+// The page content itself is plain Markdown. These callouts get special looks:
+//   > [!polaroid] caption     taped photo on the right
+//   > [!sticky] title         yellow sticky note on the right
+//   > [!where-to] title       numbered contents list with dotted lines
+//   ==text== inside where-to   handwritten "new!" with an arrow
+//   > plain blockquote        handwritten side note
+// ---------------------------------------------------------------------------
+$hand: "Gaegu", cursive;
+$arrow: "M2 14 C 18 4, 34 22, 56 10 M48 5 L57 10 L49 17";
+
+@mixin tape($color) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    width: 76px;
+    height: 24px;
+    background: $color;
+    transform: translateX(-50%) rotate(-6deg);
+    z-index: 1;
+  }
+}
+
+body[data-slug="index"] {
+  // All colours come from the theme in quartz.config.ts.
+  --home-shadow: color-mix(in srgb, var(--dark) 15%, transparent);
+  // The sticky note looks the same in light and dark mode, so it uses the fixed --paper-* colours.
+  --sticky-paper: color-mix(in srgb, var(--paper-tertiary) 30%, var(--paper-light));
+  --sticky-ink: var(--paper-dark);
+  --sticky-date: var(--paper-secondary);
+
+  & #quartz-body {
+    display: block;
+    padding: 0;
+
+    & .sidebar.right,
+    & .center > hr {
+      display: none;
+    }
+
+    // Left sidebar (file explorer) slides in from the ☰ button in the top bar.
+    & .sidebar.left:has(.explorer) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 50;
+      width: 320px;
+      height: 100vh;
+      padding: 2rem;
+      box-sizing: border-box;
+      overflow-y: auto;
+      background: var(--light);
+      box-shadow: 4px 0 24px var(--home-shadow);
+      transform: translateX(-110%);
+      visibility: hidden;
+      transition:
+        transform 0.25s ease,
+        visibility 0.25s;
+    }
+
+    & .page-header {
+      margin: 0;
+    }
+
+    & > footer {
+      padding: 0 48px;
+      box-sizing: border-box;
+
+      @media all and ($mobile) {
+        padding: 0 18px;
+      }
+    }
+  }
+
+  &.home-drawer-open #quartz-body .sidebar.left:has(.explorer) {
+    transform: none;
+    visibility: visible;
+  }
+
+  // Top bar
+  & .page-header > header {
+    margin: 0;
+    padding: 14px 48px;
+    gap: 22px;
+
+    & .home-menu {
+      margin-left: -6px;
+    }
+
+    & .page-title {
+      font-size: 1.6rem;
+    }
+
+    & .search {
+      flex: 0 1 420px;
+      margin-left: auto;
+    }
+  }
+
+  & .center > article {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 36px 48px 0 140px;
+    box-sizing: border-box;
+    display: flow-root;
+
+    & > h1 {
+      font-size: 2.3rem;
+      font-weight: normal;
+      margin: 0 0 0.3rem;
+
+      & .text-highlight {
+        color: inherit;
+        padding: 0 2px;
+        background: linear-gradient(transparent 60%, var(--textHighlight) 60%);
+      }
+    }
+
+    & > p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    // Handwritten side notes
+    & > blockquote:not(.callout) {
+      border: 0;
+      padding: 0;
+      margin: 0.6rem 0 1.2rem;
+      font-family: $hand;
+      font-size: 1.45rem;
+      line-height: 1.3;
+      color: var(--gray);
+      transform: rotate(-1.2deg);
+      transform-origin: left;
+
+      & p {
+        margin: 0;
+      }
+
+      & strong {
+        font-weight: normal;
+        color: var(--secondary);
+      }
+
+      &:last-child {
+        margin-top: 2.8rem;
+      }
+    }
+  }
+
+  & .callout[data-callout="polaroid"],
+  & .callout[data-callout="sticky"],
+  & .callout[data-callout="where-to"] {
+    border: 0;
+    border-radius: 0;
+    background: none;
+    padding: 0;
+    overflow: visible;
+
+    & .callout-icon {
+      display: none;
+    }
+
+    & > .callout-content {
+      overflow: visible;
+    }
+
+    & .callout-title,
+    & .callout-title-inner {
+      font-weight: normal;
+    }
+
+    & a.internal,
+    & a.external {
+      background: none;
+      padding: 0;
+    }
+  }
+
+  & .callout[data-callout="polaroid"] {
+    --color: var(--gray);
+  }
+
+  & .callout[data-callout="where-to"] {
+    --color: var(--dark);
+  }
+
+  // Taped photo
+  & .callout[data-callout="polaroid"] {
+    position: relative;
+    float: right;
+    clear: right;
+    width: 230px;
+    margin: 0 0 1.5rem 3rem;
+    transform: rotate(3deg);
+    display: flex;
+    flex-direction: column-reverse;
+    @include tape(color-mix(in srgb, var(--tertiary) 50%, transparent));
+
+    & img {
+      display: block;
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      border: 6px solid var(--light);
+      box-shadow: 0 3px 10px var(--home-shadow);
+      box-sizing: border-box;
+    }
+
+    & .callout-content p {
+      margin: 0;
+    }
+
+    & .callout-title {
+      justify-content: center;
+      padding: 6px 0 0;
+      font-family: $hand;
+      font-size: 1.3rem;
+      color: var(--gray);
+    }
+  }
+
+  // Sticky note
+  & .callout[data-callout="sticky"] {
+    position: relative;
+    float: right;
+    clear: right;
+    width: 240px;
+    margin: 1.5rem 0 1.5rem 3rem;
+    padding: 22px 20px 12px;
+    background: var(--sticky-paper);
+    color: var(--sticky-ink);
+    transform: rotate(2.5deg);
+    box-shadow: 2px 5px 12px var(--home-shadow);
+    font-family: $hand;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    @include tape(color-mix(in srgb, var(--paper-secondary) 30%, transparent));
+
+    & .callout-title {
+      padding: 0 0 6px;
+      font-size: 1.5rem;
+      color: var(--sticky-ink);
+      --color: var(--sticky-ink);
+    }
+
+    & .callout-content p {
+      margin: 0 0 0.8rem;
+    }
+
+    // Same dark text in light and dark mode, since the note stays yellow.
+    & .callout-content,
+    & .callout-content p,
+    & .callout-content li {
+      color: var(--sticky-ink);
+    }
+
+    & .callout-content strong,
+    & .callout-content p > strong {
+      color: var(--sticky-date);
+      font-weight: normal;
+      font-size: 0.85em;
+    }
+  }
+
+  // "where to?" contents list
+  & .callout[data-callout="where-to"] {
+    margin: 2rem 0 1rem;
+
+    & .callout-title {
+      font-family: $hand;
+      font-size: 2rem;
+      color: var(--dark);
+      padding: 0 0 0.3rem;
+    }
+
+    & ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: where-to;
+    }
+
+    & li {
+      counter-increment: where-to;
+      position: relative;
+      display: flex;
+      align-items: baseline;
+      gap: 0.35em;
+      padding: 0.55rem 0;
+      font-size: 1.1rem;
+      color: var(--gray);
+
+      &::before {
+        content: counter(where-to, decimal-leading-zero);
+        flex: none;
+        width: 1.7rem;
+        font-size: 0.85rem;
+        opacity: 0.7;
+      }
+
+      // The bold part is the row name; dotted line fills the gap to the links.
+      & > strong {
+        flex: 1;
+        display: flex;
+        align-items: baseline;
+        white-space: nowrap;
+        font-weight: normal;
+        color: var(--dark);
+
+        &::after {
+          content: "";
+          flex: 1;
+          min-width: 1.5rem;
+          margin: 0 0.6rem;
+          border-bottom: 2px dotted var(--lightgray);
+          transform: translateY(-0.3em);
+        }
+      }
+
+      & > a {
+        white-space: nowrap;
+      }
+
+      // ==new!== becomes a handwritten note with an arrow, in the left margin
+      & > .text-highlight {
+        position: absolute;
+        right: 100%;
+        top: 0.35rem;
+        margin-right: 0.6rem;
+        padding: 0 60px 0 0;
+        white-space: nowrap;
+        font-family: $hand;
+        font-size: 1.5rem;
+        color: var(--secondary);
+        background: none;
+        transform: rotate(-8deg);
+
+        // Arrow drawn in the current text colour, so it follows the accent colour.
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 56px;
+          height: 22px;
+          transform: translateY(-50%);
+          background-color: currentColor;
+          mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="22" viewBox="0 0 60 22"><path d="#{$arrow}" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/></svg>')
+            no-repeat center / contain;
+        }
+      }
+    }
+  }
+
+  // Narrow screens (phones up to small laptops): the photo and sticky note go below the
+  // list instead of beside it, so they never cover the text.
+  @media all and (max-width: 1050px) {
+    & .center > article {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & .callout[data-callout="sticky"] {
+      order: 2;
+      float: none;
+      width: 300px;
+      margin: 1.5rem 0 0 10px;
+    }
+
+    & .callout[data-callout="polaroid"] {
+      order: 3;
+      float: none;
+      width: 180px;
+      margin: 1.5rem 10px 0 auto;
+    }
+
+    & .center > article > blockquote:not(.callout):last-child {
+      order: 4;
+      margin-top: 2rem;
+    }
+  }
+
+  // Small laptops and tablets: sticky note and photo side by side under the list.
+  @media all and (min-width: 801px) and (max-width: 1050px) {
+    & .center > article {
+      flex-flow: row wrap;
+      align-items: flex-start;
+
+      & > * {
+        flex: 0 0 100%;
+      }
+
+      & > .callout[data-callout="sticky"] {
+        flex: 0 0 300px;
+      }
+
+      & > .callout[data-callout="polaroid"] {
+        flex: 0 0 180px;
+        margin: 2rem 40px 0 auto;
+      }
+    }
+  }
+
+  // Phones and small tablets
+  @media all and ($mobile) {
+    & #quartz-body .sidebar.left:has(.explorer) {
+      position: absolute;
+      width: auto;
+      height: auto;
+      padding: 16px 0 0 12px;
+      overflow: visible;
+      background: none;
+      box-shadow: none;
+      transform: none;
+      visibility: visible;
+      transition: none;
+
+      // Same side gap as the rest of the homepage on phones.
+      & .explorer-content {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+    }
+
+    & .page-header > header {
+      flex-wrap: wrap;
+      padding: 14px 18px 14px 54px;
+      gap: 12px;
+
+      & .home-menu {
+        display: none;
+      }
+
+      & .search {
+        order: 3;
+        flex: 1 1 100%;
+        margin: 0;
+      }
+
+      & .darkmode {
+        margin-left: auto;
+      }
+    }
+
+    & .center > article {
+      padding: 22px 18px 0;
+
+      & > h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    & .callout[data-callout="sticky"] {
+      width: auto;
+      margin: 1.2rem 10px 0;
+    }
+
+    & .callout[data-callout="polaroid"] {
+      width: 140px;
+    }
+
+    & .callout[data-callout="where-to"] {
+      margin-top: 1rem;
+
+      & li {
+        flex-wrap: wrap;
+        padding-left: 1.7rem;
+        font-size: 1rem;
+
+        &::before {
+          position: absolute;
+          left: 0;
+        }
+
+        & > strong {
+          flex: 0 0 100%;
+          box-sizing: border-box;
+          padding-right: 3.2rem;
+          white-space: normal;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        & > .text-highlight {
+          right: 6px;
+          top: 0.4rem;
+          margin: 0;
+          padding: 0;
+          font-size: 1.2rem;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+:root[saved-theme="dark"] body[data-slug="index"] {
+  --home-shadow: color-mix(in srgb, var(--light) 60%, transparent);
+
+  & .center > article > h1 .text-highlight {
+    background: linear-gradient(
+      transparent 60%,
+      color-mix(in srgb, var(--secondary) 40%, transparent) 60%
+    );
+  }
+
+  & .callout[data-callout="polaroid"] img {
+    border-color: var(--lightgray);
   }
 }

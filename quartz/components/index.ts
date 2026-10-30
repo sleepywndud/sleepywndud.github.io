@@ -29,6 +29,8 @@ import PrintMode from "./PrintMode"
 import Screensaver from "./Screensaver"
 import WbtsSplit from "./WbtsSplit"
 import PdfViewer from "./PdfViewer"
+import HomeBanner from "./HomeBanner"
+import HomeMenu from "./HomeMenu"
 
 export {
   ArticleTitle,
@@ -62,4 +64,6 @@ export {
   Screensaver,
   WbtsSplit,
   PdfViewer,
+  HomeBanner,
+  HomeMenu,
 }

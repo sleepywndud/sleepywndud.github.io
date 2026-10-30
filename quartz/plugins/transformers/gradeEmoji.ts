@@ -23,6 +23,9 @@ const GRADES: Record<string, { file: string; label: string }> = {
 
 const gradeRegex = new RegExp(`:(${Object.keys(GRADES).join("|")}):`, "gi")
 
+// :heart: becomes a heart icon in the theme's accent colour (styled in custom.scss).
+const heartRegex = /:heart:/gi
+
 export const GradeEmoji: QuartzTransformerPlugin = () => ({
   name: "GradeEmoji",
   markdownPlugins() {
@@ -43,6 +46,13 @@ export const GradeEmoji: QuartzTransformerPlugin = () => ({
                 value: `<img class="${cls}" src="${src}" alt="${grade.label}" title="${grade.label}">`,
               }
             },
+          ],
+          [
+            heartRegex,
+            () => ({
+              type: "html",
+              value: `<span class="heart-icon" role="img" aria-label="heart"></span>`,
+            }),
           ],
         ])
       },

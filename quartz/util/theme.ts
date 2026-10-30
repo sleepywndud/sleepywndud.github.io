@@ -154,6 +154,13 @@ ${stylesheet.join("\n\n")}
   --highlight: ${theme.colors.lightMode.highlight};
   --textHighlight: ${theme.colors.lightMode.textHighlight};
 
+  /* Light-mode colours that stay the same in dark mode, for things that look like paper
+     (e.g. the homepage sticky note). */
+  --paper-light: ${theme.colors.lightMode.light};
+  --paper-dark: ${theme.colors.lightMode.dark};
+  --paper-secondary: ${theme.colors.lightMode.secondary};
+  --paper-tertiary: ${theme.colors.lightMode.tertiary};
+
   --titleFont: "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --headerFont: "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --bodyFont: "${getFontSpecificationName(theme.typography.body)}", ${DEFAULT_SANS_SERIF};

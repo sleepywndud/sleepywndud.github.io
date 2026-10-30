@@ -10,11 +10,16 @@ footer {
     margin-bottom: 1rem;
   }
 
+  & .footer-copyright {
+    font-size: 0.85rem;
+    color: var(--gray);
+  }
+
   & table.footer-links {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-    margin: -1rem 0 1rem 0;
+    margin: 1rem 0;
     padding: 0;
 
     & tr {

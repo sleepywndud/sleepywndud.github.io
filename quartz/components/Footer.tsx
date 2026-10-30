@@ -8,11 +8,6 @@ export default ((_opts?: unknown) => {
     const baseDir = pathToRoot(fileData.slug!)
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <p>
-          Copyright (c) {year} Juyoung Park.<br />
-          All rights reserved.
-        </p>
-        <br/>
         <table class="footer-links">
           <tbody>
             <tr>
@@ -47,6 +42,7 @@ export default ((_opts?: unknown) => {
         <p>
           Any inquiries, please email <code>juyoung.parkk8@gmail.com</code>, or send me a DM on Discord/Instagram at <code>@sleepywndud</code>.
         </p>
+        <p class="footer-copyright">&copy; {year} Juyoung Park. All rights reserved.</p>
       </footer>
     )
   }
