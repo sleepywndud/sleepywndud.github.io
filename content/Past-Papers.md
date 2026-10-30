@@ -140,7 +140,8 @@ title: Past Papers
 
 [Collated Excellence Questions for 91261 Algebra](Past-Papers/L2/Algebra/91261-excellence(2012~2025).pdf)
 
-[Practice Excellence Questions for 91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [Answers](Past-Papers/L2/Algebra/91261-practice-excellence-answers.pdf)
+[Practice Excellence Questions for 91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [Answers](Past-Papers/L2/Algebra/91261-practice-excellence-answers.pdf)\
+↳ Confused about the different bases of logarithms? Check out [this note](Mathematics/Level%202/L2%20Algebra/Logarithms/Logarithms%20(Extended).md)!
 
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
