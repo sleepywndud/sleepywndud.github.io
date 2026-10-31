@@ -60,11 +60,8 @@ const TERTIARY_LIGHT = hslToHex(lightH, lightS, Math.min(lightL + 20, 90))
 const config: QuartzConfig = {
   configuration: {
     // pageTitle: "🫵🧠2️⃣💩",
-    pageTitle: "ℕBTS 🎃",
     // pageTitle: "NBTS ・▾・",
-    // pageTitle: ">⩊<.ᐟ",
-    // pageTitle: "˖ ݁♬⋆.˚𝄞",
-    // pageTitle: "\\(^o^)/",
+    pageTitle: "ℕBTS 🎃",
     pageTitleSuffix: " | ℕi Brain Too Sht",
     enableSPA: true,
     enablePopovers: true,

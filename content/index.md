@@ -1,11 +1,27 @@
 ---
 title: Welcome!
-banner: /images/banner-n.png
+banner: doodles
+doodle-says:
+  - "Hey"
+  - "kia ora!"
+  - "do some study"
+  - "AAHHHH"
+  - "Hope you get E24"
+  - "Hope you get E8"
+  - "zzzzzzzz"
+  - "proud of you ♡"
+  - "eat some vegetables"
+  - "go outside"
+  - "don't get NA!"
+  - "don't panic!"
+  - "im cool"
 ---
 
 %%
 HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
-- banner: (above) is the doodle strip under the top bar. Change the path to swap the image.
+- banner: doodles  shows your doodles in a row (hover = wiggle, click = hop and talk).
+  Or put an image path instead, e.g.  banner: /images/banner-n.png
+- doodle-says: (optional) what the doodles say when clicked, e.g.  doodle-says: [hi!, kia ora!]
 - [!polaroid] is the taped photo on the right. The title after it is the handwritten caption.
 - [!sticky] is the yellow sticky note on the right. **Bold** text inside it is the date.
 - Keep the polaroid and sticky note at the TOP of this file so they sit beside the text on laptops.

@@ -20,7 +20,26 @@ export const sharedPageComponents: SharedLayout = {
     homeOnly(Component.Search()),
     homeOnly(Component.Darkmode()),
   ],
-  afterBody: [Component.PaperTracker(), Component.PrintMode(), Component.PdfViewer()],
+  afterBody: [
+    Component.PaperTracker(),
+    Component.PrintMode(),
+    Component.PdfViewer(),
+    // A doodle peeks up at the bottom of long pages (not on the homepage).
+    notHome(
+      Component.DoodlePeek({
+        says: [
+          "you made it! ✿",
+          "well done!",
+          "nice reading!",
+          "proud of you ♡",
+          "take a break, you earned it",
+          "one step closer!",
+          "don't forget to rest",
+          "you're doing amazing",
+        ],
+      }),
+    ),
+  ],
   footer: Component.Footer(),
 }
 

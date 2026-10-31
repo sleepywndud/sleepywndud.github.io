@@ -1,0 +1,88 @@
+{
+  "bannerWidth": 7047,
+  "order": [
+    "tajo",
+    "superman",
+    "angy",
+    "hapy",
+    "i-want-to-go-home",
+    "tena-koutou",
+    "my-little-unicorn",
+    "standing-unicorn",
+    "kat",
+    "mari-catter",
+    "xiao",
+    "long-fin-eel",
+    "drumstick",
+    "nuggets",
+    "breadinger",
+    "karee-catter"
+  ],
+  "doodles": {
+    "tajo": {
+      "left": 30,
+      "right": 407
+    },
+    "superman": {
+      "left": 430,
+      "right": 754
+    },
+    "angy": {
+      "left": 787,
+      "right": 1025
+    },
+    "hapy": {
+      "left": 1083,
+      "right": 1305
+    },
+    "i-want-to-go-home": {
+      "left": 1389,
+      "right": 1659
+    },
+    "tena-koutou": {
+      "left": 1724,
+      "right": 2125
+    },
+    "my-little-unicorn": {
+      "left": 2077,
+      "right": 2462
+    },
+    "standing-unicorn": {
+      "left": 2504,
+      "right": 2875
+    },
+    "kat": {
+      "left": 2929,
+      "right": 3352
+    },
+    "mari-catter": {
+      "left": 3395,
+      "right": 3851
+    },
+    "xiao": {
+      "left": 3895,
+      "right": 4359
+    },
+    "long-fin-eel": {
+      "left": 4035,
+      "right": 5331
+    },
+    "drumstick": {
+      "left": 5386,
+      "right": 5827
+    },
+    "nuggets": {
+      "left": 5877,
+      "right": 6183
+    },
+    "breadinger": {
+      "left": 6232,
+      "right": 6582
+    },
+    "karee-catter": {
+      "left": 6628,
+      "right": 7031
+    }
+  },
+  "bannerHeight": 566
+}

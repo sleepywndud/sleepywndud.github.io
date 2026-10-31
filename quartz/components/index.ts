@@ -31,6 +31,7 @@ import WbtsSplit from "./WbtsSplit"
 import PdfViewer from "./PdfViewer"
 import HomeBanner from "./HomeBanner"
 import HomeMenu from "./HomeMenu"
+import DoodlePeek from "./DoodlePeek"
 
 export {
   ArticleTitle,
@@ -66,4 +67,5 @@ export {
   PdfViewer,
   HomeBanner,
   HomeMenu,
+  DoodlePeek,
 }
