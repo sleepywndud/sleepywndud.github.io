@@ -15,6 +15,7 @@ doodle-says:
   - "don't get NA!"
   - "don't panic!"
   - "im cool"
+  - "mathematics ♡"
 ---
 
 %%
