@@ -30,15 +30,17 @@ HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
 - A plain "> " line is a handwritten side note.
 %%
 
-> [!polaroid] meme of the week
-> ![bobo](bobo.png)
-
 > [!sticky] < new stuff >
 > **31 Oct**: NEW HOMEPAGE
 >
 > **30 Oct**: practice excellence Qs for L2 Math!
 >
 > **earlier**: all Chem + Physics papers (L2 & L3). also grade emojis like: :merit:
+
+> [!polaroid] image by Wenbo Yuan (lhui64373@gmail.com)
+> ![alt text](bobo.avif)
+> $1 and the image goes on the website for a day!
+
 
 # Welcome to ==Ni Brain Too Sht==!
 
