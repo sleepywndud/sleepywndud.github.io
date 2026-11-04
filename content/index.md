@@ -37,9 +37,9 @@ HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
 >
 > **earlier**: all Chem + Physics papers (L2 & L3). also grade emojis like: :merit:
 
-> [!polaroid] image by Wenbo Yuan (lhui64373@gmail.com)
+> [!polaroid] image by Wenbo Yuan <br> (lhui64373@gmail.com)
 > ![alt text](bobo.avif)
-> $1 and the image goes on the website for a day!
+> $1 and your image goes on the website for 1 day!
 
 
 # Welcome to ==Ni Brain Too Sht==!
