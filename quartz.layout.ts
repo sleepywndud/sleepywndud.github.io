@@ -76,7 +76,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     notHome(Component.Graph()),
     notHome(Component.DesktopOnly(Component.TableOfContents())),
-    notHome(Component.RecentNotes({ filter: (f) => f.slug !== "404" })),
+    notHome(Component.RecentNotes({ limit: 5, filter: (f) => f.slug !== "404" })),
   ],
 }
 

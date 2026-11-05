@@ -1,16 +1,40 @@
+@use "../../styles/variables.scss" as *;
+
 .recent-notes {
+  // In the sticky right sidebar this is the last flex child, so it would get
+  // squeezed to nothing. Claim the leftover height and keep room for ~5 notes.
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+
+  @media all and ($desktop) {
+    min-height: 22rem;
+  }
+
   & > h3 {
     margin: 0.5rem 0 0 0;
     font-size: 1rem;
+    flex: 0 0 auto;
   }
 
   & > ul.recent-ul {
     list-style: none;
     margin-top: 1rem;
     padding-left: 0;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 
     & > li {
       margin: 1rem 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
       .section > .desc > h3 > a {
         background-color: transparent;
       }
@@ -20,5 +44,9 @@
         opacity: 0.6;
       }
     }
+  }
+
+  & > p {
+    flex: 0 0 auto;
   }
 }
