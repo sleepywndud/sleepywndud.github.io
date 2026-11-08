@@ -19,6 +19,8 @@ export const sharedPageComponents: SharedLayout = {
     homeOnly(Component.PageTitle()),
     homeOnly(Component.Search()),
     homeOnly(Component.Darkmode()),
+    // Loudspeaker + inbox. Edit content/announcements.md.
+    homeOnly(Component.Announcements()),
   ],
   afterBody: [
     Component.PaperTracker(),

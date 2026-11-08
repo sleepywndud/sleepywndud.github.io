@@ -1,0 +1,337 @@
+@use "../../styles/variables.scss" as *;
+
+// Loudspeaker button in the top bar, its inbox, and the message popup.
+.announce {
+  position: relative;
+  flex-shrink: 0;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.announce-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+// Matches .darkmode so the two sit level in the top bar.
+.announce-btn {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  & svg {
+    width: 21px;
+    height: 21px;
+    fill: var(--darkgray);
+    transition: fill 0.1s ease;
+  }
+
+  &:hover svg,
+  &.has-unread svg {
+    fill: var(--secondary);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+.announce-badge {
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--light);
+  font-size: 0.62rem;
+  font-weight: $boldWeight;
+  line-height: 15px;
+  text-align: center;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+// ---- inbox ----------------------------------------------------------------
+.announce-inbox {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 60;
+  width: 360px;
+  max-width: calc(100vw - 24px);
+  max-height: min(60vh, 440px);
+  overflow-y: auto;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+  // --light is pure black in dark mode, so lift the surface off the page behind it.
+  background: color-mix(in srgb, var(--dark) 5%, var(--light));
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+  font-family: var(--bodyFont);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.announce-inbox-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 14px 9px;
+  border-bottom: 1px solid var(--lightgray);
+  color: var(--dark);
+  font-size: 0.86rem;
+  font-weight: $semiBoldWeight;
+}
+
+.announce-readall {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--gray);
+  font-family: inherit;
+  font-size: 0.74rem;
+  font-weight: $normalWeight;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+  }
+}
+
+.announce-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.announce-item {
+  border-bottom: 1px solid var(--lightgray);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.announce-trigger {
+  display: flex;
+  gap: 9px;
+  width: 100%;
+  padding: 11px 14px;
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--highlight);
+  }
+}
+
+// Unread marker, kept in the layout so titles line up either way.
+.announce-dot {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.announce-item.is-unread .announce-dot {
+  background: var(--secondary);
+}
+
+.announce-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.announce-date {
+  color: var(--gray);
+  font-size: 0.7rem;
+}
+
+.announce-title {
+  color: var(--dark);
+  font-size: 0.86rem;
+}
+
+.announce-item.is-unread .announce-title {
+  font-weight: $semiBoldWeight;
+}
+
+// One line of the message, so the inbox stays scannable.
+.announce-preview {
+  overflow: hidden;
+  color: var(--gray);
+  font-size: 0.76rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.announce-empty {
+  margin: 0;
+  padding: 16px 14px;
+  color: var(--gray);
+  font-size: 0.82rem;
+}
+
+// ---- message popup --------------------------------------------------------
+// The page scrolls on <html>, so the lock has to go there — putting it on <body> does
+// nothing. Replacing the scrollbar's width keeps the content box the same size, so the
+// page doesn't move while the popup is open.
+:root.announce-locked {
+  overflow: hidden;
+  padding-right: var(--announce-sbw, 0px);
+}
+
+.announce-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.announce-msg {
+  width: min(560px, 100%);
+  max-height: min(78vh, 640px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 22px 24px 26px;
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--dark) 5%, var(--light));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  font-family: var(--bodyFont);
+}
+
+.announce-msg-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.announce-msg-date {
+  margin: 0 0 3px;
+  color: var(--gray);
+  font-size: 0.76rem;
+}
+
+.announce-msg-title {
+  margin: 0;
+  color: var(--dark);
+  font-size: 1.22rem;
+  line-height: 1.25;
+}
+
+.announce-close {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 7px;
+  background: none;
+  cursor: pointer;
+
+  & svg {
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: var(--darkgray);
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  &:hover {
+    background: var(--highlight);
+  }
+}
+
+.announce-msg-body {
+  color: var(--darkgray);
+  font-size: 0.92rem;
+  line-height: 1.6;
+
+  & p {
+    margin: 0 0 0.85em;
+  }
+
+  & ul {
+    margin: 0 0 0.85em;
+    padding-left: 1.2em;
+  }
+
+  & li {
+    margin: 0.2em 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  & a {
+    color: var(--secondary);
+    background: none;
+  }
+}
+
+@media all and ($mobile) {
+  .announce-inbox {
+    position: fixed;
+    top: 56px;
+    right: 12px;
+    left: 12px;
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announce-btn svg {
+    transition: none;
+  }
+}

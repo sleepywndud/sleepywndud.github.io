@@ -195,6 +195,8 @@ title: Past Papers
 <details>
 <summary><b>91947: Mathematical Reasoning </b></summary>
 
+[Practice Excellence Questions for 91947 Mathematical Reasoning](Past-Papers/L1/Mathematical-Reasoning/91947-practice-excellence.pdf) · [Answers](Past-Papers/L1/Mathematical-Reasoning/91947-practice-excellence-answers.pdf)
+
 | Year | Examination | Schedule |
 | :--- | :--- | :--- |
 | 2025 | [Assessment](Past-Papers/L1/Mathematical-Reasoning/Assessment/2025.pdf) | [Answers](Past-Papers/L1/Mathematical-Reasoning/Answers/2025.pdf) |

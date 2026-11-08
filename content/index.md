@@ -2,20 +2,7 @@
 title: Welcome!
 banner: doodles
 doodle-says:
-  - "Hey"
-  - "kia ora!"
-  - "do some study"
-  - "AAHHHH"
-  - "Hope you get E24"
-  - "Hope you get E8"
-  - "zzzzzzzz"
-  - "proud of you ♡"
-  - "eat some vegetables"
-  - "go outside"
-  - "don't get NA!"
-  - "don't panic!"
-  - "im cool"
-  - "mathematics ♡"
+  - "dont touch me"
 ---
 
 %%
@@ -31,11 +18,11 @@ HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
 %%
 
 > [!sticky] < new stuff >
+> **8 Nov**: practice excellence Qs for L1 Math!
+> 
 > **31 Oct**: NEW HOMEPAGE
 >
 > **30 Oct**: practice excellence Qs for L2 Math!
->
-> **earlier**: all Chem + Physics papers (L2 & L3). also grade emojis like: :merit:
 
 > [!polaroid] image by Wenbo Yuan <br> (lhui64373@gmail.com)
 > ![fanart](bobo.png)
@@ -46,9 +33,11 @@ HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
 
 > ↳ Ni Brain Too Sht means your brain is too sht /j
 
-Ni Brain Too Sht is an archive of all the notes, questions and tutorials I made for myself, my juniors, my mentees and my friends for NCEA mathematics and calculus.
+*Ni Brain Too Sht* is an archive of all the notes, questions and tutorials I made for myself, my juniors, my mentees and my friends for NCEA mathematics and calculus.
 
-There's also every NZQA past paper for L2, L3, and Scholarship Calculus, plus L2 and L3 chemistry & physics.
+This website's main focus is Mathematics and Calculus.
+
+There's also every NZQA past paper for L2, L3, and Scholarship Calculus, plus L2 and L3 Chemistry & Physics.
 
 %%
 "where to?" list: one numbered line per row.
@@ -57,11 +46,12 @@ There's also every NZQA past paper for L2, L3, and Scholarship Calculus, plus L2
 %%
 
 > [!where-to] where to?
-> 1. **Maths & Calculus past papers** [L2](Past-Papers.md#level-2) · [L3](Past-Papers.md#level-3) · [Scholarship](Past-Papers.md#scholarship)
-> 2. **Practice excellence questions** ==new!== [91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [91262 Calculus](Past-Papers/L2/Calculus/91262-practice-excellence.pdf)
-> 3. **Chemistry past papers** [L2](Non-Mathematics/Chemistry/Past-Papers.md#level-2) · [L3](Non-Mathematics/Chemistry/Past-Papers.md#level-3)
-> 4. **Physics past papers** [L2](Non-Mathematics/Physics/Past-Papers.md#level-2) · [L3](Non-Mathematics/Physics/Past-Papers.md#level-3)
-> 5. **Notes** [Level 2](Mathematics/Level-2/) · [Level 3](Mathematics/Level-3/) · [Scholarship](Mathematics/Scholarship/)
-> 6. **Want to help? Contributing** [read this](Others/CONTRIBUTING.md)
+> 1. **Maths & Calculus Past Exams** [L2](Past-Papers.md#level-2) · [L3](Past-Papers.md#level-3) · [Scholarship](Past-Papers.md#scholarship)
+> 2. **==Practice L1 Excellence Questions==** ==new!== [==91947 Reasoning==](Past-Papers/L1/Mathematical-Reasoning/91947-practice-excellence.pdf)
+> 3. **Practice L2 Excellence Questions** [91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [91262 Calculus](Past-Papers/L2/Calculus/91262-practice-excellence.pdf)
+> 4. **Maths & Calculus Notes** [L2](Mathematics/Level-2/) · [L3](Mathematics/Level-3/) · [Scholarship](Mathematics/Scholarship/)
+> 5. **Chemistry Past Exams** [L2](Non-Mathematics/Chemistry/Past-Papers.md#level-2) · [L3](Non-Mathematics/Chemistry/Past-Papers.md#level-3)
+> 6. **Physics Past Exams** [L2](Non-Mathematics/Physics/Past-Papers.md#level-2) · [L3](Non-Mathematics/Physics/Past-Papers.md#level-3)
+> 7. **Want to help? Contributing** [READ THIS](Others/CONTRIBUTING.md)
 
 > psst… want to pick the next theme colour? DM me **@sleepywndud** on Discord / Instagram :heart:

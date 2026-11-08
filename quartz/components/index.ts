@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import PaperTracker from "./PaperTracker"
 import ExamCountdown from "./ExamCountdown"
+import Announcements from "./Announcements"
 import PrintMode from "./PrintMode"
 import Screensaver from "./Screensaver"
 import WbtsSplit from "./WbtsSplit"
@@ -61,6 +62,7 @@ export {
   ConditionalRender,
   PaperTracker,
   ExamCountdown,
+  Announcements,
   PrintMode,
   Screensaver,
   WbtsSplit,
