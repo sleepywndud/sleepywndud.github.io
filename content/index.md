@@ -18,6 +18,8 @@ HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
 %%
 
 > [!sticky] < new stuff >
+> **9 Nov**: random L3 excellence question puller!
+>
 > **8 Nov**: practice excellence Qs for L1 Math!
 > 
 > **31 Oct**: NEW HOMEPAGE
@@ -49,9 +51,10 @@ There's also every NZQA past paper for L2, L3, and Scholarship Calculus, plus L2
 > 1. **Maths & Calculus Past Exams** [L2](Past-Papers.md#level-2) · [L3](Past-Papers.md#level-3) · [Scholarship](Past-Papers.md#scholarship)
 > 2. **==Practice L1 Excellence Questions==** ==new!== [==91947 Reasoning==](Past-Papers/L1/Mathematical-Reasoning/91947-practice-excellence.pdf)
 > 3. **Practice L2 Excellence Questions** [91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [91262 Calculus](Past-Papers/L2/Calculus/91262-practice-excellence.pdf)
-> 4. **Maths & Calculus Notes** [L2](Mathematics/Level-2/) · [L3](Mathematics/Level-3/) · [Scholarship](Mathematics/Scholarship/)
-> 5. **Chemistry Past Exams** [L2](Non-Mathematics/Chemistry/Past-Papers.md#level-2) · [L3](Non-Mathematics/Chemistry/Past-Papers.md#level-3)
-> 6. **Physics Past Exams** [L2](Non-Mathematics/Physics/Past-Papers.md#level-2) · [L3](Non-Mathematics/Physics/Past-Papers.md#level-3)
-> 7. **Want to help? Contributing** [READ THIS](Others/CONTRIBUTING.md)
+> 4. **==Random L3 Excellence Question==** ==new!== [==Comp / Diff / Inte==](Past-Papers/Random-L3-Excellence.md)
+> 5. **Maths & Calculus Notes** [L2](Mathematics/Level-2/) · [L3](Mathematics/Level-3/) · [Scholarship](Mathematics/Scholarship/)
+> 6. **Chemistry Past Exams** [L2](Non-Mathematics/Chemistry/Past-Papers.md#level-2) · [L3](Non-Mathematics/Chemistry/Past-Papers.md#level-3)
+> 7. **Physics Past Exams** [L2](Non-Mathematics/Physics/Past-Papers.md#level-2) · [L3](Non-Mathematics/Physics/Past-Papers.md#level-3)
+> 8. **Want to help? Contributing** [READ THIS](Others/CONTRIBUTING.md)
 
 > psst… want to pick the next theme colour? DM me **@sleepywndud** on Discord / Instagram :heart:

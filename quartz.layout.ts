@@ -26,6 +26,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.PaperTracker(),
     Component.PrintMode(),
     Component.PdfViewer(),
+    Component.RandomQuestion(),
     // A doodle peeks up at the bottom of long pages (not on the homepage).
     notHome(
       Component.DoodlePeek({

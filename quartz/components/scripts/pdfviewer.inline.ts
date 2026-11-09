@@ -4,30 +4,13 @@
 //
 // Pinch (touch or trackpad) and Ctrl/Cmd + scroll/+/-/0 zoom the PDF, not the page.
 
-const PDFJS = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.min.mjs"
-const PDFJS_WORKER = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs"
+import { MAX_CANVAS_PIXELS, loadPdfjs } from "./pdfjs"
+
 const INVERT_KEY = "pdf-invert"
 
 const PT = 96 / 72 // CSS px per PDF point at 100%
 const MIN_SCALE = 0.25 * PT
 const MAX_SCALE = 5 * PT
-const MAX_CANVAS_PIXELS = 16_000_000 // iPad Safari refuses bigger canvases
-
-let pdfjsPromise: Promise<any> | null = null
-
-function loadPdfjs(): Promise<any> {
-  if (!pdfjsPromise) {
-    const url = PDFJS
-    pdfjsPromise = import(/* @vite-ignore */ url).then((lib) => {
-      // Workers can't load from another site directly, so start one through a tiny local module.
-      const blob = new Blob([`import "${PDFJS_WORKER}";`], { type: "text/javascript" })
-      lib.GlobalWorkerOptions.workerPort = new Worker(URL.createObjectURL(blob), { type: "module" })
-      return lib
-    })
-    pdfjsPromise.catch(() => (pdfjsPromise = null))
-  }
-  return pdfjsPromise
-}
 
 const icon = (body: string) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`

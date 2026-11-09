@@ -30,6 +30,7 @@ import PrintMode from "./PrintMode"
 import Screensaver from "./Screensaver"
 import WbtsSplit from "./WbtsSplit"
 import PdfViewer from "./PdfViewer"
+import RandomQuestion from "./RandomQuestion"
 import HomeBanner from "./HomeBanner"
 import HomeMenu from "./HomeMenu"
 import DoodlePeek from "./DoodlePeek"
@@ -67,6 +68,7 @@ export {
   Screensaver,
   WbtsSplit,
   PdfViewer,
+  RandomQuestion,
   HomeBanner,
   HomeMenu,
   DoodlePeek,
