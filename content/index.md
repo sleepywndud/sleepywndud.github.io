@@ -51,7 +51,7 @@ There's also every NZQA past paper for L2, L3, and Scholarship Calculus, plus L2
 > 1. **Maths & Calculus Past Exams** [L2](Past-Papers.md#level-2) · [L3](Past-Papers.md#level-3) · [Scholarship](Past-Papers.md#scholarship)
 > 2. **==Practice L1 Excellence Questions==** ==new!== [==91947 Reasoning==](Past-Papers/L1/Mathematical-Reasoning/91947-practice-excellence.pdf)
 > 3. **Practice L2 Excellence Questions** [91261 Algebra](Past-Papers/L2/Algebra/91261-practice-excellence.pdf) · [91262 Calculus](Past-Papers/L2/Calculus/91262-practice-excellence.pdf)
-> 4. **==Random L3 Excellence Question==** ==new!== [==Comp / Diff / Inte==](Past-Papers/Random-L3-Excellence.md)
+> 4. **==Random L3 Excellence Question==** ==new!== [==Comp / Diff / Inte==](Random-L3.md)
 > 5. **Maths & Calculus Notes** [L2](Mathematics/Level-2/) · [L3](Mathematics/Level-3/) · [Scholarship](Mathematics/Scholarship/)
 > 6. **Chemistry Past Exams** [L2](Non-Mathematics/Chemistry/Past-Papers.md#level-2) · [L3](Non-Mathematics/Chemistry/Past-Papers.md#level-3)
 > 7. **Physics Past Exams** [L2](Non-Mathematics/Physics/Past-Papers.md#level-2) · [L3](Non-Mathematics/Physics/Past-Papers.md#level-3)

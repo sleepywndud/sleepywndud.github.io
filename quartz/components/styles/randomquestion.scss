@@ -1,41 +1,87 @@
 @use "../../styles/variables.scss" as *;
 
-// The picker only appears once it has moved into .random-question-slot.
-.randomq {
-  display: none;
+// Covers the whole window, so the question gets the full width and none of the
+// page furniture. With WBTS open it stops where the WBTS pane starts.
+#randomq-pane {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 35; // under the PDF viewer (40) and the WBTS pad (50)
+  display: flex;
+  flex-direction: column;
+  background: var(--light);
+  font-family: var(--bodyFont);
 
-  &.ready {
-    display: block;
-    margin: 1rem 0 2rem;
+  :root.wbts-split & {
+    right: var(--wbts-size, 50vw);
+    @media all and ($mobile) {
+      right: 0;
+      bottom: var(--wbts-size, 50vh);
+    }
   }
 }
 
-.randomq-controls {
+:root.randomq-open body {
+  overflow: hidden;
+}
+
+// ---------- top bar ----------
+
+.randomq-bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.9rem;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--lightgray);
+  color: var(--darkgray);
+  font-size: 0.9rem;
+
+  & > [data-act="close"] {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    color: var(--darkgray);
+    cursor: pointer;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      background: var(--highlight);
+      color: var(--secondary);
+    }
+  }
 }
 
 .randomq-topics {
   display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
 .randomq-topic {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.1rem;
-  padding: 0.35rem 0.7rem;
+  gap: 0.05rem;
+  padding: 0.25rem 0.6rem;
   border: 1px solid var(--lightgray);
   border-radius: 8px;
   background: none;
   color: var(--gray);
   font-family: var(--bodyFont);
-  line-height: 1.15;
+  line-height: 1.1;
   cursor: pointer;
 
   &:hover {
@@ -51,81 +97,106 @@
 
 .randomq-topic-name {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .randomq-topic-std {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   opacity: 0.75;
 }
 
-.randomq-buttons {
-  display: flex;
-  align-items: stretch;
-  gap: 0.35rem;
+.randomq-progress {
   margin-left: auto;
+  color: var(--gray);
+  font-size: 0.85rem;
+  white-space: nowrap;
+
+  &.all-done {
+    color: var(--secondary);
+  }
 }
 
-.randomq-pull {
-  padding: 0.45rem 1.1rem;
-  border: 1px solid var(--secondary);
+.randomq-reset {
+  padding: 0.3rem 0.5rem;
+  border: none;
   border-radius: 8px;
-  background: var(--secondary);
-  color: var(--light);
+  background: none;
+  color: var(--gray);
   font-family: var(--bodyFont);
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.85rem;
   cursor: pointer;
 
   &:hover {
-    opacity: 0.85;
+    background: var(--highlight);
+    color: var(--secondary);
   }
 }
 
 .randomq-wbts {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.45rem 0.7rem;
+  gap: 0.3rem;
+  padding: 0.35rem 0.6rem;
   border: 1px solid var(--lightgray);
   border-radius: 8px;
   background: none;
   color: var(--darkgray);
   font-family: var(--bodyFont);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   cursor: pointer;
 
   & svg {
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     flex-shrink: 0;
   }
 
-  &:hover {
-    border-color: var(--secondary);
-    color: var(--secondary);
-  }
-
-  // The pad is already open, so the sidebar button shows the state — keep this quiet.
+  &:hover,
   :root.wbts-split & {
     border-color: var(--secondary);
     color: var(--secondary);
   }
 }
 
-.randomq-empty {
-  margin: 0;
-  color: var(--gray);
+.randomq-pull {
+  padding: 0.4rem 1.1rem;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  background: var(--secondary);
+  color: var(--light);
+  font-family: var(--bodyFont);
   font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+// ---------- the question ----------
+
+.randomq-stage {
+  flex: 1;
+  min-height: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .randomq-head {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.3rem 0.8rem;
-  margin-bottom: 0.4rem;
+  gap: 0.2rem 1rem;
+  flex-shrink: 0;
+  padding: 0.4rem 0.8rem;
   font-size: 0.85rem;
+
+  &.has-question {
+    display: flex;
+  }
 }
 
 .randomq-label {
@@ -133,85 +204,56 @@
   color: var(--darkgray);
 }
 
-.randomq-progress {
+.randomq-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.9rem;
   margin-left: auto;
-  color: var(--gray);
 
-  &.all-done {
-    color: var(--secondary);
+  & a {
+    cursor: pointer;
   }
 }
 
-// White sheet behind the question, because the PDF is drawn on white.
+// White, because the PDF pages are drawn on white.
 .randomq-sheet {
+  flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 16px; // matches GAP in randomquestion.inline.ts
   padding: 0.75rem;
-  border: 1px solid var(--lightgray);
-  border-radius: 8px;
+  overflow: auto;
   background: #fff;
-  min-height: 6rem;
 }
 
 .randomq-page {
   display: block;
-  width: 100%;
-  height: auto;
+  flex-shrink: 0;
 }
 
 .randomq-loading,
 .randomq-error {
-  margin: 1rem 0;
-  text-align: center;
+  margin: auto;
   color: #666;
   font-size: 0.9rem;
 }
 
-.randomq-foot {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem 1rem;
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-}
+// ---------- the button left on the page ----------
 
-.randomq-reset {
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background: none;
-  color: var(--gray);
+.randomq-launch {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  background: var(--secondary);
+  color: var(--light);
   font-family: var(--bodyFont);
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  text-decoration: underline;
-  text-decoration-style: dotted;
 
   &:hover {
-    color: var(--secondary);
-  }
-}
-
-// Narrow notes column (phone, or WBTS taking half the screen): stack the controls.
-@media all and ($mobile) {
-  .randomq-buttons {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .randomq-pull {
-    flex: 1;
-  }
-}
-
-:root.wbts-narrow {
-  .randomq-buttons {
-    margin-left: 0;
-  }
-
-  .randomq-sheet {
-    padding: 0.5rem;
+    opacity: 0.85;
   }
 }

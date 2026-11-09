@@ -32,6 +32,6 @@ By comparing it to the sine graph $(\sin(x))$, we can see that the two graphs ar
 
 $$y=A\cos (B(x-p))+q$$
 
-The generic equation for the cosine function is identical to the sine function ([[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/Basics/Graphs/Trigonometric Function/Sine Function]]).
+The generic equation for the cosine function is identical to the sine function ([[Sine Function]]).
 
-The descriptions and info for the $A$, and $B$, are defined in the [[wndx2/2. Area/! school/Year 11/L2MAEL/Graphing - 91257/{wip} graphing/Basics/Graphs/Trigonometric Function/Sine Function]]. 
+The descriptions and info for the $A$, and $B$, are defined in the [[Sine Function]]. 

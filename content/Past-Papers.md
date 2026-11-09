@@ -58,7 +58,7 @@ title: Past Papers
 
 ## Level 3
 
-[🎲 Random L3 Excellence Question](Past-Papers/Random-L3-Excellence.md) — pulls one at random out of Comp / Diff / Inte, with WBTS beside it.
+[🎲 Random L3 Excellence Question](Random-L3.md) — pulls one at random out of Comp / Diff / Inte, with WBTS beside it.
 
 <details>
 <summary><b>91577: <span style="opacity: 80%">Comp</span>lex Numbers</b></summary>
