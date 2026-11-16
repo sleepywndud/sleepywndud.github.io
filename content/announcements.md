@@ -16,6 +16,12 @@ One announcement per "## " heading, NEWEST FIRST:
   Paragraphs, - bullet lists, **bold**, *italic*, `code` and [links](Past-Papers.md) all work.
 %%
 
+## 2026-11-16 L1 and L3 Done!
+Hey all!
+
+Well done for completing the L1 reasoning and L3 calculus papers!\
+Give youself a pat on the back -- you've done well!
+
 ## 2026-11-08 Exam Season
 To those who has made it this far, you have done well.
 
