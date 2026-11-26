@@ -26,8 +26,8 @@ HOW THIS PAGE WORKS (notes between the percent signs are hidden on the website)
 >
 > **30 Oct**: practice excellence Qs for L2 Math!
 
-> [!polaroid] image by Wenbo Yuan <br> (lhui64373@gmail.com)
-> ![fanart](bobo.png)
+> [!polaroid] image by Kieran Clark!
+> ![fanart](dux.png)
 > $1 and your image goes on the website for 1 day!
 
 
